@@ -1,0 +1,45 @@
+@import 'variables';
+$body-bg: #fff;
+@import url('//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700|Open+Sans:400italic,700italic,400,700&subset=latin,latin-ext');
+@import '../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss';
+@import "../bower_components/fontawesome/scss/font-awesome";
+
+/********************************************************/
+/*                      Typography                      */
+/********************************************************/
+// a { color:#fff; text-decoration: none; }
+.lead { 
+	font-weight:normal;
+	font-size:1.5em;
+	line-height:1.2em;
+}
+
+.title { 
+	font-size:7em;
+	margin-bottom:15px; 
+	line-height:1em;
+	@media screen and (max-width: $screen-xs-max){
+		font-size: 4em;
+	}
+}
+.subtitle { 
+	line-height:.9em;
+	font-size:5.5em;
+	margin-top:0;
+	margin-bottom:40px; 
+	@media screen and (max-width: $screen-xs-max){
+		font-size: 3em;
+	}
+}
+.tagline { 
+	font-size:1.4em;
+	line-height:1.3em;
+	font-weight:normal;
+	margin-bottom:75px;
+}
+
+@media (max-width: 767px) {
+	.lead { 
+		font-size:1.3em;
+	}
+}

@@ -1,0 +1,418 @@
+@import 'variables';
+@import '../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss';
+@import "../bower_components/fontawesome/scss/font-awesome";
+
+html {
+	min-height:100%;
+	position: relative;
+}
+
+body {
+	background: {
+		image: url(../img/Picture1.png);
+		repeat: no-repeat;
+		position: top right;
+		attachment: scroll;
+		size: 80% auto;
+	}
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+	@media screen and (min-width: $screen-sm-min) {
+		background-size: 60% auto;
+		background-attachment: fixed;
+		margin-bottom: 60px;
+	}
+}
+
+
+/********************************************************/
+/*                    Navigation bar                    */
+/********************************************************/
+.mainmenu { z-index: 999; width:100%;  padding: 0 0 0 0; height: 0; > * {height: 0;} position: absolute;}
+
+.navbar-toggle {
+	position:relative;
+	float:left;
+	display:block;
+	padding: 9px 10px;
+	background: #fff;
+	background-image: none;
+	border: 1px solid #f4f4f4;
+	top:15px; 
+	border-radius: 4px;
+	outline: 0;
+	opacity: 1;
+	-webkit-transition: top .45s;
+	   -moz-transition: top .45s;
+	        transition: top .45s;
+	        float: left;
+	@media screen and (min-width: $screen-sm-min) {
+		top: 50px;
+	}
+	&:hover { background-color: #f4f4f4; }
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #666;
+}
+.navbar-toggle .icon-bar + .icon-bar {
+	margin-top: 4px;
+}
+.open .navbar-toggle { 
+	top:-70px; 
+	opacity: 0;  
+}
+.mainmenu .dropdown-menu {
+	top: -14em;
+	left: 0px;
+	font-size: 13px;
+	padding: 4px;
+	margin-left: -4px;
+	background:none;
+	border: 1px solid #f4f4f4;
+	border-radius: 4px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	display:block;
+	opacity:0;
+	-webkit-transition: all .45s;
+	   -moz-transition: all .45s;
+	        transition: all .45s;
+}
+.mainmenu .open .dropdown-menu { 
+	top:17px;
+	opacity:1;
+	background-color: #fff;
+	border-radius: $border-radius-base;
+	@media screen and (min-width: $screen-sm-min) {
+		top: 52px;
+	}
+}
+.mainmenu .dropdown-menu a { 
+	background-color: transparent;
+	padding:10px 10px;
+	margin:0;
+	margin-bottom: 3px;
+	text-decoration: none;
+	border-radius: $border-radius-base;
+	color: $gray-darker;
+	&:hover, &:active, &.active { 
+		background:rgba(221, 221, 221, 0.8);
+		color: inherit;
+	}
+	&.active {
+		font-weight: bold;
+		cursor: pointer;
+		pointer-events: none;
+	}
+}
+
+
+/********************************************************/
+/*             Sections - universal classes             */
+/********************************************************/
+.section { 
+	z-index: 1;
+	min-height:420px;
+	width: 100%; 
+	overflow:auto;
+	display:none;
+	top:0;
+	@media (min-width: $screen-sm-min) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.container {background-color: #fff; padding:{top:40px;bottom:40px;} border: 1px solid #f4f4f4; border-radius: $border-radius-base; box-shadow: 4px 4px 0 rgba($gray-dark, 0.4); }
+}
+
+/********************************************************/
+/*                      Typography                      */
+/********************************************************/
+// a { color:#fff; text-decoration: none; }
+.lead { 
+	font-weight:normal;
+	font-size:1.5em;
+	line-height:1.2em;
+}
+
+.title { 
+	font-size:7em;
+	margin-bottom:15px; 
+	line-height:1em;
+	@media screen and (max-width: $screen-xs-max){
+		font-size: 4em;
+		.logged-in & {
+			font-size: 4em;
+		}
+	}
+	text-shadow: 2px 2px 0 rgba($gray-dark, 0.4);
+	.logged-in & {
+		font-size: 5.5em;
+	}
+}
+.subtitle { 
+	line-height:.9em;
+	font-size:5.5em;
+	margin-top:0;
+	margin-bottom:40px; 
+	@media screen and (max-width: $screen-xs-max){
+		font-size: 3em;
+		.logged-in & {
+			font-size: 3em;
+		}
+	}
+	.logged-in & {
+		font-size: 4.5em;
+	}
+}
+.tagline { 
+	font-size:1.4em;
+	line-height:1.3em;
+	font-weight:normal;
+	margin-bottom:75px;
+}
+
+@media (max-width: 767px) {
+	.lead { 
+		font-size:1.3em;
+	}
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+.sticky-footer {
+	@media screen and (min-width: $screen-sm-min) {
+		position: absolute;
+		bottom: 0;
+		/* Set the fixed height of the footer here */
+		height: 60px;
+	}
+	width: 100%;
+	background-color: #8ab98e;
+	color: #fff;
+}
+
+.planview-logo {
+	height: 40px;
+	width: 174px;
+	background: {
+		image: url(../img/Planview-Logo-White-White.png);
+		repeat: no-repeat;
+		attachment: scroll;
+		size: 80%;
+		position: center center;
+	}
+	display: block;
+}
+
+
+body.login {
+	margin-bottom: 0;
+	#login {
+		padding-top: 4%;
+		h1 a {
+			background: {
+				image: url('../img/Planview-Logo-Black.png');
+				size: 235px 188px*235px/739px;
+			}
+			width: 235px;
+			height: 188px*235px/739px;
+		}
+		#login_error {
+			@extend .alert, .alert-danger;
+		}
+		.message {
+			@extend .alert, .alert-info;
+		}
+		form {
+			border-radius: $border-radius-base;
+			p {
+				@include make-xs-column(12);
+				@extend .form-group;
+				label {
+					width: 100%;
+				}
+				.input {
+					@extend .form-control;
+					margin: 0;
+					background: white;
+				}
+			}
+			p.forgetmenot {
+				@extend .checkbox;
+			}
+			p.submit {
+				margin-top: 20px;
+				@include make-xs-column(12);
+				#wp-submit {
+					@extend .btn, .btn-block, .btn-success;
+					height: auto;
+					border: 0;
+				}
+			}
+			padding: {
+				top: 40px;
+				bottom: 40px;
+				left: 25px;
+				right: 25px;
+			}
+			label {
+				color: $text-color;
+				font-size: $font-size-base;
+			}
+		}
+		p#nav, p#backtoblog {
+			padding: {
+				left: $grid-gutter-width / 2;
+				right: $grid-gutter-width / 2;
+				top: 0;
+				bottom: 0;
+			}
+			text-align: center;
+			font: {
+				size: $font-size-base;
+			}
+			a {
+				@extend a, .label, .label-info;
+			}
+		}
+	}
+}
+
+.modal-dialog {
+	margin-top: 40px;
+}
+
+.login-username, .login-password {
+	@extend .form-group;
+}
+.login-remember {
+	@extend .checkbox;
+}
+#loginform .input {
+	@extend .form-control;
+}
+.login-submit {
+	text-align: center;
+}
+#wp-submit {
+	@extend .btn, .btn-success, .btn-lg;
+}
+
+/* Forms */
+.gform_fields {
+  @extend .list-unstyled;
+  #recaptcha_area { margin: 0 auto; }
+}  
+// @if $ie8 {
+//   .gfield {
+//     &.gfield_error { @extend .has-error; }
+//     .gfield_label { @extend .control-label; }
+//     @extend .form-group;
+//     margin-bottom: 10px;
+//     #{$single-line-text-inputs}, textarea, select {
+//       @extend .form-control;
+//     }
+//     select[multiple], select[size] {
+//       @extend select[multiple];
+//     }
+//   }
+// }
+// @else {
+  .gfield {
+    &.gfield_error { @extend .has-error; }
+    .gfield_label { @extend .control-label; }
+    @extend .form-group;
+    margin-bottom: 10px;
+  }
+// }
+.ginput_complex {
+  @include make-row();
+  .ginput_left, .ginput_right { 
+    @include make-xs-column(12);
+    @include make-md-column(6);
+  }
+  label { font-weight: normal; margin-bottom: 0; }
+  input:focus + label { font-weight: bold; }
+}
+.validation_error {
+  @extend .alert;
+  @extend .alert-danger;
+}
+.validation_message {
+  @extend .label;
+  @extend .label-danger;
+}
+.gfield_required { color: $alert-danger-text; }
+.gfield_checkbox {
+  @extend .list-unstyled;
+  li {
+    label {
+      font-weight: normal;
+    }
+    input[type=checkbox]:checked + label {
+      font-weight: bold;
+    }
+    input[type=checkbox] {
+      margin-right: 5px;
+    }
+  }
+}
+.gform_validation_container {
+  display: none;
+}
+.gform_button {
+	@extend .btn, .btn-info;
+}
+.gform_footer {
+	text-align: center;
+}
+.question-form {
+	label { @extend .sr-only; }
+}
+.question-row {
+	.resources {
+		text-align: center;
+	}
+	@media screen and (min-width: $screen-sm-min) {
+		.resources {
+			padding-bottom: 15px;
+			border-left: 2px #eee solid;
+			text-align: left;
+		}
+	}
+	@media screen and (min-width: $screen-md-min) {
+		.resources {
+			padding-left: 45px;
+		}
+		.question {
+			padding-right: 45px;
+		}
+	}
+}
+.question {
+	.gform_wrapper {
+		@include make-row();
+	}
+	.gform_body {
+		@include make-sm-column(9);
+		@media screen and (min-width: $screen-sm-min) {
+			padding-right: 5px;
+		}
+	}
+	.gform_footer {
+		@include make-sm-column(3);
+		@media screen and (min-width: $screen-sm-min) {
+			padding-left: 5px;
+		}
+	}
+	.gform_button {
+		@media screen and (min-width: $screen-sm-min) {
+			display: block;
+			width: 100%;
+		}
+	}
+}
