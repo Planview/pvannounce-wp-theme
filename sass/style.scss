@@ -2,9 +2,13 @@
 @import '../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss';
 @import "../bower_components/fontawesome/scss/font-awesome";
 
+
+/********************************************************/
+/*                    Site-specific Styles              */
+/********************************************************/
 html {
-	min-height:100%;
-	position: relative;
+    min-height:100%;
+    position: relative;
 }
 
 body {
@@ -331,7 +335,7 @@ body.login {
 // }
 .ginput_complex {
   @include make-row();
-  .ginput_left, .ginput_right { 
+  .ginput_left, .ginput_right, .name_first, .name_last { 
     @include make-xs-column(12);
     @include make-md-column(6);
   }

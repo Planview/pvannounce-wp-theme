@@ -4,6 +4,7 @@
   "authors": [
     "Steve Crockett <crockett95@gmail.com>"
   ],
+  "main": "functions.php",
   "license": "MIT",
   "private": true,
   "ignore": [
@@ -14,7 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-sass-official": "~3.2.0",
+    "bootstrap-sass-official": "~3.3.4",
     "modernizr": "~2.8.3",
     "fontawesome": "~4.1.0",
     "history.js": "~1.8.0",

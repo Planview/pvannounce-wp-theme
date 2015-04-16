@@ -1,4 +1,5 @@
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+@charset "UTF-8";
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -18,6 +19,7 @@ footer,
 header,
 hgroup,
 main,
+menu,
 nav,
 section,
 summary {
@@ -43,7 +45,7 @@ template {
 }
 
 a, body.login #login p#nav a, body.login #login p#backtoblog a {
-  background: transparent;
+  background-color: transparent;
 }
 
 a:active, body.login #login p#nav a:active, body.login #login p#backtoblog a:active,
@@ -220,12 +222,15 @@ th {
   padding: 0;
 }
 
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
-  * {
-    text-shadow: none !important;
-    color: #000 !important;
+  *,
+  *:before,
+  *:after {
     background: transparent !important;
+    color: #000 !important;
     box-shadow: none !important;
+    text-shadow: none !important;
   }
 
   a, body.login #login p#nav a, body.login #login p#backtoblog a,
@@ -243,10 +248,10 @@ th {
     content: " (" attr(title) ")";
   }
 
-  a[href^="javascript:"]:after, body.login #login p#nav a[href^="javascript:"]:after, body.login #login p#backtoblog a[href^="javascript:"]:after,
-  a[href^="#"]:after,
-  body.login #login p#nav a[href^="#"]:after,
-  body.login #login p#backtoblog a[href^="#"]:after {
+  a[href^="#"]:after, body.login #login p#nav a[href^="#"]:after, body.login #login p#backtoblog a[href^="#"]:after,
+  a[href^="javascript:"]:after,
+  body.login #login p#nav a[href^="javascript:"]:after,
+  body.login #login p#backtoblog a[href^="javascript:"]:after {
     content: "";
   }
 
@@ -289,11 +294,6 @@ th {
     display: none;
   }
 
-  .table td,
-  .table th {
-    background-color: #fff !important;
-  }
-
   .btn > .caret, body.login #login form p.submit #wp-submit > .caret, #wp-submit > .caret, .gform_button > .caret,
   .dropup > .btn > .caret,
   body.login #login form p.submit .dropup > #wp-submit > .caret,
@@ -309,6 +309,10 @@ th {
   .table {
     border-collapse: collapse !important;
   }
+  .table td,
+  .table th {
+    background-color: #fff !important;
+  }
 
   .table-bordered th,
   .table-bordered td {
@@ -317,8 +321,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("bootstrap/glyphicons-halflings-regular.eot");
-  src: url("bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 .glyphicon {
   position: relative;
@@ -340,7 +344,8 @@ th {
   content: "\2b";
 }
 
-.glyphicon-euro:before {
+.glyphicon-euro:before,
+.glyphicon-eur:before {
   content: "\20ac";
 }
 
@@ -1132,6 +1137,254 @@ th {
   content: "\e200";
 }
 
+.glyphicon-cd:before {
+  content: "\e201";
+}
+
+.glyphicon-save-file:before {
+  content: "\e202";
+}
+
+.glyphicon-open-file:before {
+  content: "\e203";
+}
+
+.glyphicon-level-up:before {
+  content: "\e204";
+}
+
+.glyphicon-copy:before {
+  content: "\e205";
+}
+
+.glyphicon-paste:before {
+  content: "\e206";
+}
+
+.glyphicon-alert:before {
+  content: "\e209";
+}
+
+.glyphicon-equalizer:before {
+  content: "\e210";
+}
+
+.glyphicon-king:before {
+  content: "\e211";
+}
+
+.glyphicon-queen:before {
+  content: "\e212";
+}
+
+.glyphicon-pawn:before {
+  content: "\e213";
+}
+
+.glyphicon-bishop:before {
+  content: "\e214";
+}
+
+.glyphicon-knight:before {
+  content: "\e215";
+}
+
+.glyphicon-baby-formula:before {
+  content: "\e216";
+}
+
+.glyphicon-tent:before {
+  content: "\26fa";
+}
+
+.glyphicon-blackboard:before {
+  content: "\e218";
+}
+
+.glyphicon-bed:before {
+  content: "\e219";
+}
+
+.glyphicon-apple:before {
+  content: "\f8ff";
+}
+
+.glyphicon-erase:before {
+  content: "\e221";
+}
+
+.glyphicon-hourglass:before {
+  content: "\231b";
+}
+
+.glyphicon-lamp:before {
+  content: "\e223";
+}
+
+.glyphicon-duplicate:before {
+  content: "\e224";
+}
+
+.glyphicon-piggy-bank:before {
+  content: "\e225";
+}
+
+.glyphicon-scissors:before {
+  content: "\e226";
+}
+
+.glyphicon-bitcoin:before {
+  content: "\e227";
+}
+
+.glyphicon-btc:before {
+  content: "\e227";
+}
+
+.glyphicon-xbt:before {
+  content: "\e227";
+}
+
+.glyphicon-yen:before {
+  content: "\00a5";
+}
+
+.glyphicon-jpy:before {
+  content: "\00a5";
+}
+
+.glyphicon-ruble:before {
+  content: "\20bd";
+}
+
+.glyphicon-rub:before {
+  content: "\20bd";
+}
+
+.glyphicon-scale:before {
+  content: "\e230";
+}
+
+.glyphicon-ice-lolly:before {
+  content: "\e231";
+}
+
+.glyphicon-ice-lolly-tasted:before {
+  content: "\e232";
+}
+
+.glyphicon-education:before {
+  content: "\e233";
+}
+
+.glyphicon-option-horizontal:before {
+  content: "\e234";
+}
+
+.glyphicon-option-vertical:before {
+  content: "\e235";
+}
+
+.glyphicon-menu-hamburger:before {
+  content: "\e236";
+}
+
+.glyphicon-modal-window:before {
+  content: "\e237";
+}
+
+.glyphicon-oil:before {
+  content: "\e238";
+}
+
+.glyphicon-grain:before {
+  content: "\e239";
+}
+
+.glyphicon-sunglasses:before {
+  content: "\e240";
+}
+
+.glyphicon-text-size:before {
+  content: "\e241";
+}
+
+.glyphicon-text-color:before {
+  content: "\e242";
+}
+
+.glyphicon-text-background:before {
+  content: "\e243";
+}
+
+.glyphicon-object-align-top:before {
+  content: "\e244";
+}
+
+.glyphicon-object-align-bottom:before {
+  content: "\e245";
+}
+
+.glyphicon-object-align-horizontal:before {
+  content: "\e246";
+}
+
+.glyphicon-object-align-left:before {
+  content: "\e247";
+}
+
+.glyphicon-object-align-vertical:before {
+  content: "\e248";
+}
+
+.glyphicon-object-align-right:before {
+  content: "\e249";
+}
+
+.glyphicon-triangle-right:before {
+  content: "\e250";
+}
+
+.glyphicon-triangle-left:before {
+  content: "\e251";
+}
+
+.glyphicon-triangle-bottom:before {
+  content: "\e252";
+}
+
+.glyphicon-triangle-top:before {
+  content: "\e253";
+}
+
+.glyphicon-console:before {
+  content: "\e254";
+}
+
+.glyphicon-superscript:before {
+  content: "\e255";
+}
+
+.glyphicon-subscript:before {
+  content: "\e256";
+}
+
+.glyphicon-menu-left:before {
+  content: "\e257";
+}
+
+.glyphicon-menu-right:before {
+  content: "\e258";
+}
+
+.glyphicon-menu-down:before {
+  content: "\e259";
+}
+
+.glyphicon-menu-up:before {
+  content: "\e260";
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1153,7 +1406,7 @@ html {
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.42857;
+  line-height: 1.428571429;
   color: #333333;
   background-color: #f4f4f4;
 }
@@ -1191,7 +1444,6 @@ img {
 
 .img-responsive {
   display: block;
-  width: 100% \9;
   max-width: 100%;
   height: auto;
 }
@@ -1202,15 +1454,14 @@ img {
 
 .img-thumbnail {
   padding: 4px;
-  line-height: 1.42857;
+  line-height: 1.428571429;
   background-color: #f4f4f4;
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
-  width: 100% \9;
   max-width: 100%;
   height: auto;
 }
@@ -1244,6 +1495,10 @@ hr {
   margin: 0;
   overflow: visible;
   clip: auto;
+}
+
+[role="button"] {
+  cursor: pointer;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -1353,10 +1608,6 @@ small,
   font-size: 85%;
 }
 
-cite {
-  font-style: normal;
-}
-
 mark,
 .mark {
   background-color: #fcf8e3;
@@ -1387,7 +1638,7 @@ mark,
   text-transform: lowercase;
 }
 
-.text-uppercase {
+.text-uppercase, .initialism {
   text-transform: uppercase;
 }
 
@@ -1501,12 +1752,14 @@ ol ol {
   margin-bottom: 0;
 }
 
-.list-unstyled, .list-inline, .gform_fields, .gfield_checkbox {
+.list-unstyled, .gform_fields, .gfield_checkbox {
   padding-left: 0;
   list-style: none;
 }
 
 .list-inline {
+  padding-left: 0;
+  list-style: none;
   margin-left: -5px;
 }
 .list-inline > li {
@@ -1522,7 +1775,7 @@ dl {
 
 dt,
 dd {
-  line-height: 1.42857;
+  line-height: 1.428571429;
 }
 
 dt {
@@ -1563,7 +1816,6 @@ abbr[data-original-title] {
 
 .initialism {
   font-size: 90%;
-  text-transform: uppercase;
 }
 
 blockquote {
@@ -1582,7 +1834,7 @@ blockquote small,
 blockquote .small {
   display: block;
   font-size: 80%;
-  line-height: 1.42857;
+  line-height: 1.428571429;
   color: #777777;
 }
 blockquote footer:before,
@@ -1616,15 +1868,10 @@ blockquote.pull-right .small:after {
   content: '\00A0 \2014';
 }
 
-blockquote:before,
-blockquote:after {
-  content: "";
-}
-
 address {
   margin-bottom: 20px;
   font-style: normal;
-  line-height: 1.42857;
+  line-height: 1.428571429;
 }
 
 code,
@@ -1645,14 +1892,15 @@ code {
 kbd {
   padding: 2px 4px;
   font-size: 90%;
-  color: white;
-  background-color: #333333;
+  color: #fff;
+  background-color: #333;
   border-radius: 3px;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 kbd kbd {
   padding: 0;
   font-size: 100%;
+  font-weight: bold;
   box-shadow: none;
 }
 
@@ -1661,12 +1909,12 @@ pre {
   padding: 9.5px;
   margin: 0 0 10px;
   font-size: 13px;
-  line-height: 1.42857;
+  line-height: 1.428571429;
   word-break: break-all;
   word-wrap: break-word;
   color: #333333;
-  background-color: whitesmoke;
-  border: 1px solid #cccccc;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
 pre code {
@@ -1750,11 +1998,11 @@ pre code {
 }
 
 .col-xs-1 {
-  width: 8.33333%;
+  width: 8.3333333333%;
 }
 
 .col-xs-2 {
-  width: 16.66667%;
+  width: 16.6666666667%;
 }
 
 .col-xs-3 {
@@ -1762,11 +2010,11 @@ pre code {
 }
 
 .col-xs-4 {
-  width: 33.33333%;
+  width: 33.3333333333%;
 }
 
 .col-xs-5 {
-  width: 41.66667%;
+  width: 41.6666666667%;
 }
 
 .col-xs-6 {
@@ -1774,11 +2022,11 @@ pre code {
 }
 
 .col-xs-7 {
-  width: 58.33333%;
+  width: 58.3333333333%;
 }
 
 .col-xs-8 {
-  width: 66.66667%;
+  width: 66.6666666667%;
 }
 
 .col-xs-9 {
@@ -1786,11 +2034,11 @@ pre code {
 }
 
 .col-xs-10 {
-  width: 83.33333%;
+  width: 83.3333333333%;
 }
 
 .col-xs-11 {
-  width: 91.66667%;
+  width: 91.6666666667%;
 }
 
 .col-xs-12 {
@@ -1802,11 +2050,11 @@ pre code {
 }
 
 .col-xs-pull-1 {
-  right: 8.33333%;
+  right: 8.3333333333%;
 }
 
 .col-xs-pull-2 {
-  right: 16.66667%;
+  right: 16.6666666667%;
 }
 
 .col-xs-pull-3 {
@@ -1814,11 +2062,11 @@ pre code {
 }
 
 .col-xs-pull-4 {
-  right: 33.33333%;
+  right: 33.3333333333%;
 }
 
 .col-xs-pull-5 {
-  right: 41.66667%;
+  right: 41.6666666667%;
 }
 
 .col-xs-pull-6 {
@@ -1826,11 +2074,11 @@ pre code {
 }
 
 .col-xs-pull-7 {
-  right: 58.33333%;
+  right: 58.3333333333%;
 }
 
 .col-xs-pull-8 {
-  right: 66.66667%;
+  right: 66.6666666667%;
 }
 
 .col-xs-pull-9 {
@@ -1838,11 +2086,11 @@ pre code {
 }
 
 .col-xs-pull-10 {
-  right: 83.33333%;
+  right: 83.3333333333%;
 }
 
 .col-xs-pull-11 {
-  right: 91.66667%;
+  right: 91.6666666667%;
 }
 
 .col-xs-pull-12 {
@@ -1854,11 +2102,11 @@ pre code {
 }
 
 .col-xs-push-1 {
-  left: 8.33333%;
+  left: 8.3333333333%;
 }
 
 .col-xs-push-2 {
-  left: 16.66667%;
+  left: 16.6666666667%;
 }
 
 .col-xs-push-3 {
@@ -1866,11 +2114,11 @@ pre code {
 }
 
 .col-xs-push-4 {
-  left: 33.33333%;
+  left: 33.3333333333%;
 }
 
 .col-xs-push-5 {
-  left: 41.66667%;
+  left: 41.6666666667%;
 }
 
 .col-xs-push-6 {
@@ -1878,11 +2126,11 @@ pre code {
 }
 
 .col-xs-push-7 {
-  left: 58.33333%;
+  left: 58.3333333333%;
 }
 
 .col-xs-push-8 {
-  left: 66.66667%;
+  left: 66.6666666667%;
 }
 
 .col-xs-push-9 {
@@ -1890,11 +2138,11 @@ pre code {
 }
 
 .col-xs-push-10 {
-  left: 83.33333%;
+  left: 83.3333333333%;
 }
 
 .col-xs-push-11 {
-  left: 91.66667%;
+  left: 91.6666666667%;
 }
 
 .col-xs-push-12 {
@@ -1906,11 +2154,11 @@ pre code {
 }
 
 .col-xs-offset-1 {
-  margin-left: 8.33333%;
+  margin-left: 8.3333333333%;
 }
 
 .col-xs-offset-2 {
-  margin-left: 16.66667%;
+  margin-left: 16.6666666667%;
 }
 
 .col-xs-offset-3 {
@@ -1918,11 +2166,11 @@ pre code {
 }
 
 .col-xs-offset-4 {
-  margin-left: 33.33333%;
+  margin-left: 33.3333333333%;
 }
 
 .col-xs-offset-5 {
-  margin-left: 41.66667%;
+  margin-left: 41.6666666667%;
 }
 
 .col-xs-offset-6 {
@@ -1930,11 +2178,11 @@ pre code {
 }
 
 .col-xs-offset-7 {
-  margin-left: 58.33333%;
+  margin-left: 58.3333333333%;
 }
 
 .col-xs-offset-8 {
-  margin-left: 66.66667%;
+  margin-left: 66.6666666667%;
 }
 
 .col-xs-offset-9 {
@@ -1942,11 +2190,11 @@ pre code {
 }
 
 .col-xs-offset-10 {
-  margin-left: 83.33333%;
+  margin-left: 83.3333333333%;
 }
 
 .col-xs-offset-11 {
-  margin-left: 91.66667%;
+  margin-left: 91.6666666667%;
 }
 
 .col-xs-offset-12 {
@@ -1959,11 +2207,11 @@ pre code {
   }
 
   .col-sm-1 {
-    width: 8.33333%;
+    width: 8.3333333333%;
   }
 
   .col-sm-2 {
-    width: 16.66667%;
+    width: 16.6666666667%;
   }
 
   .col-sm-3 {
@@ -1971,11 +2219,11 @@ pre code {
   }
 
   .col-sm-4 {
-    width: 33.33333%;
+    width: 33.3333333333%;
   }
 
   .col-sm-5 {
-    width: 41.66667%;
+    width: 41.6666666667%;
   }
 
   .col-sm-6 {
@@ -1983,11 +2231,11 @@ pre code {
   }
 
   .col-sm-7 {
-    width: 58.33333%;
+    width: 58.3333333333%;
   }
 
   .col-sm-8 {
-    width: 66.66667%;
+    width: 66.6666666667%;
   }
 
   .col-sm-9 {
@@ -1995,11 +2243,11 @@ pre code {
   }
 
   .col-sm-10 {
-    width: 83.33333%;
+    width: 83.3333333333%;
   }
 
   .col-sm-11 {
-    width: 91.66667%;
+    width: 91.6666666667%;
   }
 
   .col-sm-12 {
@@ -2011,11 +2259,11 @@ pre code {
   }
 
   .col-sm-pull-1 {
-    right: 8.33333%;
+    right: 8.3333333333%;
   }
 
   .col-sm-pull-2 {
-    right: 16.66667%;
+    right: 16.6666666667%;
   }
 
   .col-sm-pull-3 {
@@ -2023,11 +2271,11 @@ pre code {
   }
 
   .col-sm-pull-4 {
-    right: 33.33333%;
+    right: 33.3333333333%;
   }
 
   .col-sm-pull-5 {
-    right: 41.66667%;
+    right: 41.6666666667%;
   }
 
   .col-sm-pull-6 {
@@ -2035,11 +2283,11 @@ pre code {
   }
 
   .col-sm-pull-7 {
-    right: 58.33333%;
+    right: 58.3333333333%;
   }
 
   .col-sm-pull-8 {
-    right: 66.66667%;
+    right: 66.6666666667%;
   }
 
   .col-sm-pull-9 {
@@ -2047,11 +2295,11 @@ pre code {
   }
 
   .col-sm-pull-10 {
-    right: 83.33333%;
+    right: 83.3333333333%;
   }
 
   .col-sm-pull-11 {
-    right: 91.66667%;
+    right: 91.6666666667%;
   }
 
   .col-sm-pull-12 {
@@ -2063,11 +2311,11 @@ pre code {
   }
 
   .col-sm-push-1 {
-    left: 8.33333%;
+    left: 8.3333333333%;
   }
 
   .col-sm-push-2 {
-    left: 16.66667%;
+    left: 16.6666666667%;
   }
 
   .col-sm-push-3 {
@@ -2075,11 +2323,11 @@ pre code {
   }
 
   .col-sm-push-4 {
-    left: 33.33333%;
+    left: 33.3333333333%;
   }
 
   .col-sm-push-5 {
-    left: 41.66667%;
+    left: 41.6666666667%;
   }
 
   .col-sm-push-6 {
@@ -2087,11 +2335,11 @@ pre code {
   }
 
   .col-sm-push-7 {
-    left: 58.33333%;
+    left: 58.3333333333%;
   }
 
   .col-sm-push-8 {
-    left: 66.66667%;
+    left: 66.6666666667%;
   }
 
   .col-sm-push-9 {
@@ -2099,11 +2347,11 @@ pre code {
   }
 
   .col-sm-push-10 {
-    left: 83.33333%;
+    left: 83.3333333333%;
   }
 
   .col-sm-push-11 {
-    left: 91.66667%;
+    left: 91.6666666667%;
   }
 
   .col-sm-push-12 {
@@ -2115,11 +2363,11 @@ pre code {
   }
 
   .col-sm-offset-1 {
-    margin-left: 8.33333%;
+    margin-left: 8.3333333333%;
   }
 
   .col-sm-offset-2 {
-    margin-left: 16.66667%;
+    margin-left: 16.6666666667%;
   }
 
   .col-sm-offset-3 {
@@ -2127,11 +2375,11 @@ pre code {
   }
 
   .col-sm-offset-4 {
-    margin-left: 33.33333%;
+    margin-left: 33.3333333333%;
   }
 
   .col-sm-offset-5 {
-    margin-left: 41.66667%;
+    margin-left: 41.6666666667%;
   }
 
   .col-sm-offset-6 {
@@ -2139,11 +2387,11 @@ pre code {
   }
 
   .col-sm-offset-7 {
-    margin-left: 58.33333%;
+    margin-left: 58.3333333333%;
   }
 
   .col-sm-offset-8 {
-    margin-left: 66.66667%;
+    margin-left: 66.6666666667%;
   }
 
   .col-sm-offset-9 {
@@ -2151,11 +2399,11 @@ pre code {
   }
 
   .col-sm-offset-10 {
-    margin-left: 83.33333%;
+    margin-left: 83.3333333333%;
   }
 
   .col-sm-offset-11 {
-    margin-left: 91.66667%;
+    margin-left: 91.6666666667%;
   }
 
   .col-sm-offset-12 {
@@ -2168,11 +2416,11 @@ pre code {
   }
 
   .col-md-1 {
-    width: 8.33333%;
+    width: 8.3333333333%;
   }
 
   .col-md-2 {
-    width: 16.66667%;
+    width: 16.6666666667%;
   }
 
   .col-md-3 {
@@ -2180,11 +2428,11 @@ pre code {
   }
 
   .col-md-4 {
-    width: 33.33333%;
+    width: 33.3333333333%;
   }
 
   .col-md-5 {
-    width: 41.66667%;
+    width: 41.6666666667%;
   }
 
   .col-md-6 {
@@ -2192,11 +2440,11 @@ pre code {
   }
 
   .col-md-7 {
-    width: 58.33333%;
+    width: 58.3333333333%;
   }
 
   .col-md-8 {
-    width: 66.66667%;
+    width: 66.6666666667%;
   }
 
   .col-md-9 {
@@ -2204,11 +2452,11 @@ pre code {
   }
 
   .col-md-10 {
-    width: 83.33333%;
+    width: 83.3333333333%;
   }
 
   .col-md-11 {
-    width: 91.66667%;
+    width: 91.6666666667%;
   }
 
   .col-md-12 {
@@ -2220,11 +2468,11 @@ pre code {
   }
 
   .col-md-pull-1 {
-    right: 8.33333%;
+    right: 8.3333333333%;
   }
 
   .col-md-pull-2 {
-    right: 16.66667%;
+    right: 16.6666666667%;
   }
 
   .col-md-pull-3 {
@@ -2232,11 +2480,11 @@ pre code {
   }
 
   .col-md-pull-4 {
-    right: 33.33333%;
+    right: 33.3333333333%;
   }
 
   .col-md-pull-5 {
-    right: 41.66667%;
+    right: 41.6666666667%;
   }
 
   .col-md-pull-6 {
@@ -2244,11 +2492,11 @@ pre code {
   }
 
   .col-md-pull-7 {
-    right: 58.33333%;
+    right: 58.3333333333%;
   }
 
   .col-md-pull-8 {
-    right: 66.66667%;
+    right: 66.6666666667%;
   }
 
   .col-md-pull-9 {
@@ -2256,11 +2504,11 @@ pre code {
   }
 
   .col-md-pull-10 {
-    right: 83.33333%;
+    right: 83.3333333333%;
   }
 
   .col-md-pull-11 {
-    right: 91.66667%;
+    right: 91.6666666667%;
   }
 
   .col-md-pull-12 {
@@ -2272,11 +2520,11 @@ pre code {
   }
 
   .col-md-push-1 {
-    left: 8.33333%;
+    left: 8.3333333333%;
   }
 
   .col-md-push-2 {
-    left: 16.66667%;
+    left: 16.6666666667%;
   }
 
   .col-md-push-3 {
@@ -2284,11 +2532,11 @@ pre code {
   }
 
   .col-md-push-4 {
-    left: 33.33333%;
+    left: 33.3333333333%;
   }
 
   .col-md-push-5 {
-    left: 41.66667%;
+    left: 41.6666666667%;
   }
 
   .col-md-push-6 {
@@ -2296,11 +2544,11 @@ pre code {
   }
 
   .col-md-push-7 {
-    left: 58.33333%;
+    left: 58.3333333333%;
   }
 
   .col-md-push-8 {
-    left: 66.66667%;
+    left: 66.6666666667%;
   }
 
   .col-md-push-9 {
@@ -2308,11 +2556,11 @@ pre code {
   }
 
   .col-md-push-10 {
-    left: 83.33333%;
+    left: 83.3333333333%;
   }
 
   .col-md-push-11 {
-    left: 91.66667%;
+    left: 91.6666666667%;
   }
 
   .col-md-push-12 {
@@ -2324,11 +2572,11 @@ pre code {
   }
 
   .col-md-offset-1 {
-    margin-left: 8.33333%;
+    margin-left: 8.3333333333%;
   }
 
   .col-md-offset-2 {
-    margin-left: 16.66667%;
+    margin-left: 16.6666666667%;
   }
 
   .col-md-offset-3 {
@@ -2336,11 +2584,11 @@ pre code {
   }
 
   .col-md-offset-4 {
-    margin-left: 33.33333%;
+    margin-left: 33.3333333333%;
   }
 
   .col-md-offset-5 {
-    margin-left: 41.66667%;
+    margin-left: 41.6666666667%;
   }
 
   .col-md-offset-6 {
@@ -2348,11 +2596,11 @@ pre code {
   }
 
   .col-md-offset-7 {
-    margin-left: 58.33333%;
+    margin-left: 58.3333333333%;
   }
 
   .col-md-offset-8 {
-    margin-left: 66.66667%;
+    margin-left: 66.6666666667%;
   }
 
   .col-md-offset-9 {
@@ -2360,11 +2608,11 @@ pre code {
   }
 
   .col-md-offset-10 {
-    margin-left: 83.33333%;
+    margin-left: 83.3333333333%;
   }
 
   .col-md-offset-11 {
-    margin-left: 91.66667%;
+    margin-left: 91.6666666667%;
   }
 
   .col-md-offset-12 {
@@ -2377,11 +2625,11 @@ pre code {
   }
 
   .col-lg-1 {
-    width: 8.33333%;
+    width: 8.3333333333%;
   }
 
   .col-lg-2 {
-    width: 16.66667%;
+    width: 16.6666666667%;
   }
 
   .col-lg-3 {
@@ -2389,11 +2637,11 @@ pre code {
   }
 
   .col-lg-4 {
-    width: 33.33333%;
+    width: 33.3333333333%;
   }
 
   .col-lg-5 {
-    width: 41.66667%;
+    width: 41.6666666667%;
   }
 
   .col-lg-6 {
@@ -2401,11 +2649,11 @@ pre code {
   }
 
   .col-lg-7 {
-    width: 58.33333%;
+    width: 58.3333333333%;
   }
 
   .col-lg-8 {
-    width: 66.66667%;
+    width: 66.6666666667%;
   }
 
   .col-lg-9 {
@@ -2413,11 +2661,11 @@ pre code {
   }
 
   .col-lg-10 {
-    width: 83.33333%;
+    width: 83.3333333333%;
   }
 
   .col-lg-11 {
-    width: 91.66667%;
+    width: 91.6666666667%;
   }
 
   .col-lg-12 {
@@ -2429,11 +2677,11 @@ pre code {
   }
 
   .col-lg-pull-1 {
-    right: 8.33333%;
+    right: 8.3333333333%;
   }
 
   .col-lg-pull-2 {
-    right: 16.66667%;
+    right: 16.6666666667%;
   }
 
   .col-lg-pull-3 {
@@ -2441,11 +2689,11 @@ pre code {
   }
 
   .col-lg-pull-4 {
-    right: 33.33333%;
+    right: 33.3333333333%;
   }
 
   .col-lg-pull-5 {
-    right: 41.66667%;
+    right: 41.6666666667%;
   }
 
   .col-lg-pull-6 {
@@ -2453,11 +2701,11 @@ pre code {
   }
 
   .col-lg-pull-7 {
-    right: 58.33333%;
+    right: 58.3333333333%;
   }
 
   .col-lg-pull-8 {
-    right: 66.66667%;
+    right: 66.6666666667%;
   }
 
   .col-lg-pull-9 {
@@ -2465,11 +2713,11 @@ pre code {
   }
 
   .col-lg-pull-10 {
-    right: 83.33333%;
+    right: 83.3333333333%;
   }
 
   .col-lg-pull-11 {
-    right: 91.66667%;
+    right: 91.6666666667%;
   }
 
   .col-lg-pull-12 {
@@ -2481,11 +2729,11 @@ pre code {
   }
 
   .col-lg-push-1 {
-    left: 8.33333%;
+    left: 8.3333333333%;
   }
 
   .col-lg-push-2 {
-    left: 16.66667%;
+    left: 16.6666666667%;
   }
 
   .col-lg-push-3 {
@@ -2493,11 +2741,11 @@ pre code {
   }
 
   .col-lg-push-4 {
-    left: 33.33333%;
+    left: 33.3333333333%;
   }
 
   .col-lg-push-5 {
-    left: 41.66667%;
+    left: 41.6666666667%;
   }
 
   .col-lg-push-6 {
@@ -2505,11 +2753,11 @@ pre code {
   }
 
   .col-lg-push-7 {
-    left: 58.33333%;
+    left: 58.3333333333%;
   }
 
   .col-lg-push-8 {
-    left: 66.66667%;
+    left: 66.6666666667%;
   }
 
   .col-lg-push-9 {
@@ -2517,11 +2765,11 @@ pre code {
   }
 
   .col-lg-push-10 {
-    left: 83.33333%;
+    left: 83.3333333333%;
   }
 
   .col-lg-push-11 {
-    left: 91.66667%;
+    left: 91.6666666667%;
   }
 
   .col-lg-push-12 {
@@ -2533,11 +2781,11 @@ pre code {
   }
 
   .col-lg-offset-1 {
-    margin-left: 8.33333%;
+    margin-left: 8.3333333333%;
   }
 
   .col-lg-offset-2 {
-    margin-left: 16.66667%;
+    margin-left: 16.6666666667%;
   }
 
   .col-lg-offset-3 {
@@ -2545,11 +2793,11 @@ pre code {
   }
 
   .col-lg-offset-4 {
-    margin-left: 33.33333%;
+    margin-left: 33.3333333333%;
   }
 
   .col-lg-offset-5 {
-    margin-left: 41.66667%;
+    margin-left: 41.6666666667%;
   }
 
   .col-lg-offset-6 {
@@ -2557,11 +2805,11 @@ pre code {
   }
 
   .col-lg-offset-7 {
-    margin-left: 58.33333%;
+    margin-left: 58.3333333333%;
   }
 
   .col-lg-offset-8 {
-    margin-left: 66.66667%;
+    margin-left: 66.6666666667%;
   }
 
   .col-lg-offset-9 {
@@ -2569,11 +2817,11 @@ pre code {
   }
 
   .col-lg-offset-10 {
-    margin-left: 83.33333%;
+    margin-left: 83.3333333333%;
   }
 
   .col-lg-offset-11 {
-    margin-left: 91.66667%;
+    margin-left: 91.6666666667%;
   }
 
   .col-lg-offset-12 {
@@ -2582,6 +2830,13 @@ pre code {
 }
 table {
   background-color: transparent;
+}
+
+caption {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #777777;
+  text-align: left;
 }
 
 th {
@@ -2600,13 +2855,13 @@ th {
 .table > tfoot > tr > th,
 .table > tfoot > tr > td {
   padding: 8px;
-  line-height: 1.42857;
+  line-height: 1.428571429;
   vertical-align: top;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #ddd;
 }
 .table > thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 2px solid #dddddd;
+  border-bottom: 2px solid #ddd;
 }
 .table > caption + thead > tr:first-child > th,
 .table > caption + thead > tr:first-child > td,
@@ -2617,7 +2872,7 @@ th {
   border-top: 0;
 }
 .table > tbody + tbody {
-  border-top: 2px solid #dddddd;
+  border-top: 2px solid #ddd;
 }
 .table .table {
   background-color: #f4f4f4;
@@ -2633,7 +2888,7 @@ th {
 }
 
 .table-bordered {
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td,
@@ -2641,21 +2896,19 @@ th {
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > th,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td {
   border-bottom-width: 2px;
 }
 
-.table-striped > tbody > tr:nth-child(odd) > td,
-.table-striped > tbody > tr:nth-child(odd) > th {
+.table-striped > tbody > tr:nth-of-type(odd) {
   background-color: #f9f9f9;
 }
 
-.table-hover > tbody > tr:hover > td,
-.table-hover > tbody > tr:hover > th {
-  background-color: whitesmoke;
+.table-hover > tbody > tr:hover {
+  background-color: #f5f5f5;
 }
 
 table col[class*="col-"] {
@@ -2681,7 +2934,7 @@ table th[class*="col-"] {
 .table > tfoot > tr > th.active,
 .table > tfoot > tr.active > td,
 .table > tfoot > tr.active > th {
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
 }
 
 .table-hover > tbody > tr > td.active:hover,
@@ -2761,15 +3014,17 @@ table th[class*="col-"] {
   background-color: #ebcccc;
 }
 
+.table-responsive {
+  overflow-x: auto;
+  min-height: 0.01%;
+}
 @media screen and (max-width: 767px) {
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
     overflow-y: hidden;
-    overflow-x: auto;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #dddddd;
-    -webkit-overflow-scrolling: touch;
+    border: 1px solid #ddd;
   }
   .table-responsive > .table {
     margin-bottom: 0;
@@ -2874,7 +3129,7 @@ output {
   display: block;
   padding-top: 7px;
   font-size: 14px;
-  line-height: 1.42857;
+  line-height: 1.428571429;
   color: #555555;
 }
 
@@ -2884,11 +3139,11 @@ output {
   height: 34px;
   padding: 6px 12px;
   font-size: 14px;
-  line-height: 1.42857;
+  line-height: 1.428571429;
   color: #555555;
-  background-color: white;
+  background-color: #fff;
   background-image: none;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -2903,19 +3158,21 @@ output {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(150, 179, 197, 0.6);
 }
 .form-control::-moz-placeholder, body.login #login form p .input::-moz-placeholder, #loginform .input::-moz-placeholder {
-  color: #777777;
+  color: #999;
   opacity: 1;
 }
 .form-control:-ms-input-placeholder, body.login #login form p .input:-ms-input-placeholder, #loginform .input:-ms-input-placeholder {
-  color: #777777;
+  color: #999;
 }
 .form-control::-webkit-input-placeholder, body.login #login form p .input::-webkit-input-placeholder, #loginform .input::-webkit-input-placeholder {
-  color: #777777;
+  color: #999;
 }
 .form-control[disabled], body.login #login form p [disabled].input, #loginform [disabled].input, .form-control[readonly], body.login #login form p [readonly].input, #loginform [readonly].input, fieldset[disabled] .form-control, fieldset[disabled] body.login #login form p .input, body.login #login form p fieldset[disabled] .input, fieldset[disabled] #loginform .input, #loginform fieldset[disabled] .input {
-  cursor: not-allowed;
   background-color: #eeeeee;
   opacity: 1;
+}
+.form-control[disabled], body.login #login form p [disabled].input, #loginform [disabled].input, fieldset[disabled] .form-control, fieldset[disabled] body.login #login form p .input, body.login #login form p fieldset[disabled] .input, fieldset[disabled] #loginform .input, #loginform fieldset[disabled] .input {
+  cursor: not-allowed;
 }
 
 textarea.form-control, body.login #login form p textarea.input, #loginform textarea.input {
@@ -2926,114 +3183,90 @@ input[type="search"] {
   -webkit-appearance: none;
 }
 
-input[type="date"],
-input[type="time"],
-input[type="datetime-local"],
-input[type="month"] {
-  line-height: 34px;
-  line-height: 1.42857 \0;
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="date"],
+  input[type="time"],
+  input[type="datetime-local"],
+  input[type="month"] {
+    line-height: 34px;
+  }
+  input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control, body.login #login form p .input-group-sm > input[type="date"].input, #loginform .input-group-sm > input[type="date"].input,
+  .input-group-sm > input[type="date"].input-group-addon,
+  .input-group-sm > .input-group-btn > input[type="date"].btn,
+  body.login #login form p.submit .input-group-sm > .input-group-btn > input[type="date"]#wp-submit,
+  .input-group-sm > .input-group-btn > input[type="date"]#wp-submit,
+  .input-group-sm > .input-group-btn > input[type="date"].gform_button, .input-group-sm input[type="date"],
+  input[type="time"].input-sm,
+  .input-group-sm > input[type="time"].form-control,
+  body.login #login form p .input-group-sm > input[type="time"].input,
+  #loginform .input-group-sm > input[type="time"].input,
+  .input-group-sm > input[type="time"].input-group-addon,
+  .input-group-sm > .input-group-btn > input[type="time"].btn,
+  body.login #login form p.submit .input-group-sm > .input-group-btn > input[type="time"]#wp-submit,
+  .input-group-sm > .input-group-btn > input[type="time"]#wp-submit,
+  .input-group-sm > .input-group-btn > input[type="time"].gform_button, .input-group-sm
+  input[type="time"],
+  input[type="datetime-local"].input-sm,
+  .input-group-sm > input[type="datetime-local"].form-control,
+  body.login #login form p .input-group-sm > input[type="datetime-local"].input,
+  #loginform .input-group-sm > input[type="datetime-local"].input,
+  .input-group-sm > input[type="datetime-local"].input-group-addon,
+  .input-group-sm > .input-group-btn > input[type="datetime-local"].btn,
+  body.login #login form p.submit .input-group-sm > .input-group-btn > input[type="datetime-local"]#wp-submit,
+  .input-group-sm > .input-group-btn > input[type="datetime-local"]#wp-submit,
+  .input-group-sm > .input-group-btn > input[type="datetime-local"].gform_button, .input-group-sm
+  input[type="datetime-local"],
+  input[type="month"].input-sm,
+  .input-group-sm > input[type="month"].form-control,
+  body.login #login form p .input-group-sm > input[type="month"].input,
+  #loginform .input-group-sm > input[type="month"].input,
+  .input-group-sm > input[type="month"].input-group-addon,
+  .input-group-sm > .input-group-btn > input[type="month"].btn,
+  body.login #login form p.submit .input-group-sm > .input-group-btn > input[type="month"]#wp-submit,
+  .input-group-sm > .input-group-btn > input[type="month"]#wp-submit,
+  .input-group-sm > .input-group-btn > input[type="month"].gform_button, .input-group-sm
+  input[type="month"] {
+    line-height: 30px;
+  }
+  input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control, body.login #login form p .input-group-lg > input[type="date"].input, #loginform .input-group-lg > input[type="date"].input,
+  .input-group-lg > input[type="date"].input-group-addon,
+  .input-group-lg > .input-group-btn > input[type="date"].btn,
+  body.login #login form p.submit .input-group-lg > .input-group-btn > input[type="date"]#wp-submit,
+  .input-group-lg > .input-group-btn > input[type="date"]#wp-submit,
+  .input-group-lg > .input-group-btn > input[type="date"].gform_button, .input-group-lg input[type="date"],
+  input[type="time"].input-lg,
+  .input-group-lg > input[type="time"].form-control,
+  body.login #login form p .input-group-lg > input[type="time"].input,
+  #loginform .input-group-lg > input[type="time"].input,
+  .input-group-lg > input[type="time"].input-group-addon,
+  .input-group-lg > .input-group-btn > input[type="time"].btn,
+  body.login #login form p.submit .input-group-lg > .input-group-btn > input[type="time"]#wp-submit,
+  .input-group-lg > .input-group-btn > input[type="time"]#wp-submit,
+  .input-group-lg > .input-group-btn > input[type="time"].gform_button, .input-group-lg
+  input[type="time"],
+  input[type="datetime-local"].input-lg,
+  .input-group-lg > input[type="datetime-local"].form-control,
+  body.login #login form p .input-group-lg > input[type="datetime-local"].input,
+  #loginform .input-group-lg > input[type="datetime-local"].input,
+  .input-group-lg > input[type="datetime-local"].input-group-addon,
+  .input-group-lg > .input-group-btn > input[type="datetime-local"].btn,
+  body.login #login form p.submit .input-group-lg > .input-group-btn > input[type="datetime-local"]#wp-submit,
+  .input-group-lg > .input-group-btn > input[type="datetime-local"]#wp-submit,
+  .input-group-lg > .input-group-btn > input[type="datetime-local"].gform_button, .input-group-lg
+  input[type="datetime-local"],
+  input[type="month"].input-lg,
+  .input-group-lg > input[type="month"].form-control,
+  body.login #login form p .input-group-lg > input[type="month"].input,
+  #loginform .input-group-lg > input[type="month"].input,
+  .input-group-lg > input[type="month"].input-group-addon,
+  .input-group-lg > .input-group-btn > input[type="month"].btn,
+  body.login #login form p.submit .input-group-lg > .input-group-btn > input[type="month"]#wp-submit,
+  .input-group-lg > .input-group-btn > input[type="month"]#wp-submit,
+  .input-group-lg > .input-group-btn > input[type="month"].gform_button, .input-group-lg
+  input[type="month"] {
+    line-height: 46px;
+  }
 }
-input[type="date"].input-sm, .form-horizontal .form-group-sm input[type="date"].form-control, .form-horizontal .form-group-sm body.login #login form p input[type="date"].input, body.login #login form p .form-horizontal .form-group-sm input[type="date"].input, .form-horizontal .form-group-sm #loginform input[type="date"].input, #loginform .form-horizontal .form-group-sm input[type="date"].input, .input-group-sm > input[type="date"].form-control, body.login #login form p .input-group-sm > input[type="date"].input, #loginform .input-group-sm > input[type="date"].input,
-.input-group-sm > input[type="date"].input-group-addon,
-.input-group-sm > .input-group-btn > input[type="date"].btn,
-body.login #login form p.submit .input-group-sm > .input-group-btn > input[type="date"]#wp-submit,
-.input-group-sm > .input-group-btn > input[type="date"]#wp-submit,
-.input-group-sm > .input-group-btn > input[type="date"].gform_button,
-input[type="time"].input-sm,
-.form-horizontal .form-group-sm input[type="time"].form-control,
-.form-horizontal .form-group-sm body.login #login form p input[type="time"].input,
-body.login #login form p .form-horizontal .form-group-sm input[type="time"].input,
-.form-horizontal .form-group-sm #loginform input[type="time"].input,
-#loginform .form-horizontal .form-group-sm input[type="time"].input,
-.input-group-sm > input[type="time"].form-control,
-body.login #login form p .input-group-sm > input[type="time"].input,
-#loginform .input-group-sm > input[type="time"].input,
-.input-group-sm > input[type="time"].input-group-addon,
-.input-group-sm > .input-group-btn > input[type="time"].btn,
-body.login #login form p.submit .input-group-sm > .input-group-btn > input[type="time"]#wp-submit,
-.input-group-sm > .input-group-btn > input[type="time"]#wp-submit,
-.input-group-sm > .input-group-btn > input[type="time"].gform_button,
-input[type="datetime-local"].input-sm,
-.form-horizontal .form-group-sm input[type="datetime-local"].form-control,
-.form-horizontal .form-group-sm body.login #login form p input[type="datetime-local"].input,
-body.login #login form p .form-horizontal .form-group-sm input[type="datetime-local"].input,
-.form-horizontal .form-group-sm #loginform input[type="datetime-local"].input,
-#loginform .form-horizontal .form-group-sm input[type="datetime-local"].input,
-.input-group-sm > input[type="datetime-local"].form-control,
-body.login #login form p .input-group-sm > input[type="datetime-local"].input,
-#loginform .input-group-sm > input[type="datetime-local"].input,
-.input-group-sm > input[type="datetime-local"].input-group-addon,
-.input-group-sm > .input-group-btn > input[type="datetime-local"].btn,
-body.login #login form p.submit .input-group-sm > .input-group-btn > input[type="datetime-local"]#wp-submit,
-.input-group-sm > .input-group-btn > input[type="datetime-local"]#wp-submit,
-.input-group-sm > .input-group-btn > input[type="datetime-local"].gform_button,
-input[type="month"].input-sm,
-.form-horizontal .form-group-sm input[type="month"].form-control,
-.form-horizontal .form-group-sm body.login #login form p input[type="month"].input,
-body.login #login form p .form-horizontal .form-group-sm input[type="month"].input,
-.form-horizontal .form-group-sm #loginform input[type="month"].input,
-#loginform .form-horizontal .form-group-sm input[type="month"].input,
-.input-group-sm > input[type="month"].form-control,
-body.login #login form p .input-group-sm > input[type="month"].input,
-#loginform .input-group-sm > input[type="month"].input,
-.input-group-sm > input[type="month"].input-group-addon,
-.input-group-sm > .input-group-btn > input[type="month"].btn,
-body.login #login form p.submit .input-group-sm > .input-group-btn > input[type="month"]#wp-submit,
-.input-group-sm > .input-group-btn > input[type="month"]#wp-submit,
-.input-group-sm > .input-group-btn > input[type="month"].gform_button {
-  line-height: 30px;
-}
-input[type="date"].input-lg, .form-horizontal .form-group-lg input[type="date"].form-control, .form-horizontal .form-group-lg body.login #login form p input[type="date"].input, body.login #login form p .form-horizontal .form-group-lg input[type="date"].input, .form-horizontal .form-group-lg #loginform input[type="date"].input, #loginform .form-horizontal .form-group-lg input[type="date"].input, .input-group-lg > input[type="date"].form-control, body.login #login form p .input-group-lg > input[type="date"].input, #loginform .input-group-lg > input[type="date"].input,
-.input-group-lg > input[type="date"].input-group-addon,
-.input-group-lg > .input-group-btn > input[type="date"].btn,
-body.login #login form p.submit .input-group-lg > .input-group-btn > input[type="date"]#wp-submit,
-.input-group-lg > .input-group-btn > input[type="date"]#wp-submit,
-.input-group-lg > .input-group-btn > input[type="date"].gform_button,
-input[type="time"].input-lg,
-.form-horizontal .form-group-lg input[type="time"].form-control,
-.form-horizontal .form-group-lg body.login #login form p input[type="time"].input,
-body.login #login form p .form-horizontal .form-group-lg input[type="time"].input,
-.form-horizontal .form-group-lg #loginform input[type="time"].input,
-#loginform .form-horizontal .form-group-lg input[type="time"].input,
-.input-group-lg > input[type="time"].form-control,
-body.login #login form p .input-group-lg > input[type="time"].input,
-#loginform .input-group-lg > input[type="time"].input,
-.input-group-lg > input[type="time"].input-group-addon,
-.input-group-lg > .input-group-btn > input[type="time"].btn,
-body.login #login form p.submit .input-group-lg > .input-group-btn > input[type="time"]#wp-submit,
-.input-group-lg > .input-group-btn > input[type="time"]#wp-submit,
-.input-group-lg > .input-group-btn > input[type="time"].gform_button,
-input[type="datetime-local"].input-lg,
-.form-horizontal .form-group-lg input[type="datetime-local"].form-control,
-.form-horizontal .form-group-lg body.login #login form p input[type="datetime-local"].input,
-body.login #login form p .form-horizontal .form-group-lg input[type="datetime-local"].input,
-.form-horizontal .form-group-lg #loginform input[type="datetime-local"].input,
-#loginform .form-horizontal .form-group-lg input[type="datetime-local"].input,
-.input-group-lg > input[type="datetime-local"].form-control,
-body.login #login form p .input-group-lg > input[type="datetime-local"].input,
-#loginform .input-group-lg > input[type="datetime-local"].input,
-.input-group-lg > input[type="datetime-local"].input-group-addon,
-.input-group-lg > .input-group-btn > input[type="datetime-local"].btn,
-body.login #login form p.submit .input-group-lg > .input-group-btn > input[type="datetime-local"]#wp-submit,
-.input-group-lg > .input-group-btn > input[type="datetime-local"]#wp-submit,
-.input-group-lg > .input-group-btn > input[type="datetime-local"].gform_button,
-input[type="month"].input-lg,
-.form-horizontal .form-group-lg input[type="month"].form-control,
-.form-horizontal .form-group-lg body.login #login form p input[type="month"].input,
-body.login #login form p .form-horizontal .form-group-lg input[type="month"].input,
-.form-horizontal .form-group-lg #loginform input[type="month"].input,
-#loginform .form-horizontal .form-group-lg input[type="month"].input,
-.input-group-lg > input[type="month"].form-control,
-body.login #login form p .input-group-lg > input[type="month"].input,
-#loginform .input-group-lg > input[type="month"].input,
-.input-group-lg > input[type="month"].input-group-addon,
-.input-group-lg > .input-group-btn > input[type="month"].btn,
-body.login #login form p.submit .input-group-lg > .input-group-btn > input[type="month"]#wp-submit,
-.input-group-lg > .input-group-btn > input[type="month"]#wp-submit,
-.input-group-lg > .input-group-btn > input[type="month"].gform_button {
-  line-height: 46px;
-}
-
 .form-group, body.login #login form p, .login-username, .login-password, .gfield {
   margin-bottom: 15px;
 }
@@ -3044,7 +3277,6 @@ body.login #login form p.forgetmenot,
 .login-remember {
   position: relative;
   display: block;
-  min-height: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -3052,6 +3284,7 @@ body.login #login form p.forgetmenot,
 .checkbox label,
 body.login #login form p.forgetmenot label,
 .login-remember label {
+  min-height: 20px;
   padding-left: 20px;
   margin-bottom: 0;
   font-weight: normal;
@@ -3084,6 +3317,7 @@ body.login #login form p.forgetmenot + .login-remember,
 
 .radio-inline,
 .checkbox-inline {
+  position: relative;
   display: inline-block;
   padding-left: 20px;
   margin-bottom: 0;
@@ -3124,13 +3358,14 @@ body.login #login form p.disabled.forgetmenot label,
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 0;
+  min-height: 34px;
 }
-.form-control-static.input-lg, .form-horizontal .form-group-lg .form-control-static.form-control, .form-horizontal .form-group-lg body.login #login form p .form-control-static.input, body.login #login form p .form-horizontal .form-group-lg .form-control-static.input, .form-horizontal .form-group-lg #loginform .form-control-static.input, #loginform .form-horizontal .form-group-lg .form-control-static.input, .input-group-lg > .form-control-static.form-control, body.login #login form p .input-group-lg > .form-control-static.input, #loginform .input-group-lg > .form-control-static.input,
+.form-control-static.input-lg, .input-group-lg > .form-control-static.form-control, body.login #login form p .input-group-lg > .form-control-static.input, #loginform .input-group-lg > .form-control-static.input,
 .input-group-lg > .form-control-static.input-group-addon,
 .input-group-lg > .input-group-btn > .form-control-static.btn,
 body.login #login form p.submit .input-group-lg > .input-group-btn > .form-control-static#wp-submit,
 .input-group-lg > .input-group-btn > .form-control-static#wp-submit,
-.input-group-lg > .input-group-btn > .form-control-static.gform_button, .form-control-static.input-sm, .form-horizontal .form-group-sm .form-control-static.form-control, .form-horizontal .form-group-sm body.login #login form p .form-control-static.input, body.login #login form p .form-horizontal .form-group-sm .form-control-static.input, .form-horizontal .form-group-sm #loginform .form-control-static.input, #loginform .form-horizontal .form-group-sm .form-control-static.input, .input-group-sm > .form-control-static.form-control, body.login #login form p .input-group-sm > .form-control-static.input, #loginform .input-group-sm > .form-control-static.input,
+.input-group-lg > .input-group-btn > .form-control-static.gform_button, .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control, body.login #login form p .input-group-sm > .form-control-static.input, #loginform .input-group-sm > .form-control-static.input,
 .input-group-sm > .form-control-static.input-group-addon,
 .input-group-sm > .input-group-btn > .form-control-static.btn,
 body.login #login form p.submit .input-group-sm > .input-group-btn > .form-control-static#wp-submit,
@@ -3140,7 +3375,7 @@ body.login #login form p.submit .input-group-sm > .input-group-btn > .form-contr
   padding-right: 0;
 }
 
-.input-sm, .form-horizontal .form-group-sm .form-control, .form-horizontal .form-group-sm body.login #login form p .input, body.login #login form p .form-horizontal .form-group-sm .input, .form-horizontal .form-group-sm #loginform .input, #loginform .form-horizontal .form-group-sm .input, .input-group-sm > .form-control, body.login #login form p .input-group-sm > .input, #loginform .input-group-sm > .input,
+.input-sm, .input-group-sm > .form-control, body.login #login form p .input-group-sm > .input, #loginform .input-group-sm > .input,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn,
 body.login #login form p.submit .input-group-sm > .input-group-btn > #wp-submit,
@@ -3153,7 +3388,7 @@ body.login #login form p.submit .input-group-sm > .input-group-btn > #wp-submit,
   border-radius: 3px;
 }
 
-select.input-sm, .form-horizontal .form-group-sm select.form-control, .form-horizontal .form-group-sm body.login #login form p select.input, body.login #login form p .form-horizontal .form-group-sm select.input, .form-horizontal .form-group-sm #loginform select.input, #loginform .form-horizontal .form-group-sm select.input, .input-group-sm > select.form-control, body.login #login form p .input-group-sm > select.input, #loginform .input-group-sm > select.input,
+select.input-sm, .input-group-sm > select.form-control, body.login #login form p .input-group-sm > select.input, #loginform .input-group-sm > select.input,
 .input-group-sm > select.input-group-addon,
 .input-group-sm > .input-group-btn > select.btn,
 body.login #login form p.submit .input-group-sm > .input-group-btn > select#wp-submit,
@@ -3163,18 +3398,13 @@ body.login #login form p.submit .input-group-sm > .input-group-btn > select#wp-s
   line-height: 30px;
 }
 
-textarea.input-sm, .form-horizontal .form-group-sm textarea.form-control, .form-horizontal .form-group-sm body.login #login form p textarea.input, body.login #login form p .form-horizontal .form-group-sm textarea.input, .form-horizontal .form-group-sm #loginform textarea.input, #loginform .form-horizontal .form-group-sm textarea.input, .input-group-sm > textarea.form-control, body.login #login form p .input-group-sm > textarea.input, #loginform .input-group-sm > textarea.input,
+textarea.input-sm, .input-group-sm > textarea.form-control, body.login #login form p .input-group-sm > textarea.input, #loginform .input-group-sm > textarea.input,
 .input-group-sm > textarea.input-group-addon,
 .input-group-sm > .input-group-btn > textarea.btn,
 body.login #login form p.submit .input-group-sm > .input-group-btn > textarea#wp-submit,
 .input-group-sm > .input-group-btn > textarea#wp-submit,
 .input-group-sm > .input-group-btn > textarea.gform_button,
 select[multiple].input-sm,
-.form-horizontal .form-group-sm select[multiple].form-control,
-.form-horizontal .form-group-sm body.login #login form p select[multiple].input,
-body.login #login form p .form-horizontal .form-group-sm select[multiple].input,
-.form-horizontal .form-group-sm #loginform select[multiple].input,
-#loginform .form-horizontal .form-group-sm select[multiple].input,
 .input-group-sm > select[multiple].form-control,
 body.login #login form p .input-group-sm > select[multiple].input,
 #loginform .input-group-sm > select[multiple].input,
@@ -3186,7 +3416,34 @@ body.login #login form p.submit .input-group-sm > .input-group-btn > select[mult
   height: auto;
 }
 
-.input-lg, .form-horizontal .form-group-lg .form-control, .form-horizontal .form-group-lg body.login #login form p .input, body.login #login form p .form-horizontal .form-group-lg .input, .form-horizontal .form-group-lg #loginform .input, #loginform .form-horizontal .form-group-lg .input, .input-group-lg > .form-control, body.login #login form p .input-group-lg > .input, #loginform .input-group-lg > .input,
+.form-group-sm .form-control, .form-group-sm body.login #login form p .input, body.login #login form p .form-group-sm .input, .form-group-sm #loginform .input, #loginform .form-group-sm .input {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.form-group-sm select.form-control, .form-group-sm body.login #login form p select.input, body.login #login form p .form-group-sm select.input, .form-group-sm #loginform select.input, #loginform .form-group-sm select.input {
+  height: 30px;
+  line-height: 30px;
+}
+.form-group-sm textarea.form-control, .form-group-sm body.login #login form p textarea.input, body.login #login form p .form-group-sm textarea.input, .form-group-sm #loginform textarea.input, #loginform .form-group-sm textarea.input,
+.form-group-sm select[multiple].form-control,
+.form-group-sm body.login #login form p select[multiple].input,
+body.login #login form p .form-group-sm select[multiple].input,
+.form-group-sm #loginform select[multiple].input,
+#loginform .form-group-sm select[multiple].input {
+  height: auto;
+}
+.form-group-sm .form-control-static {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  min-height: 32px;
+}
+
+.input-lg, .input-group-lg > .form-control, body.login #login form p .input-group-lg > .input, #loginform .input-group-lg > .input,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn,
 body.login #login form p.submit .input-group-lg > .input-group-btn > #wp-submit,
@@ -3195,11 +3452,11 @@ body.login #login form p.submit .input-group-lg > .input-group-btn > #wp-submit,
   height: 46px;
   padding: 10px 16px;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1.3333333;
   border-radius: 6px;
 }
 
-select.input-lg, .form-horizontal .form-group-lg select.form-control, .form-horizontal .form-group-lg body.login #login form p select.input, body.login #login form p .form-horizontal .form-group-lg select.input, .form-horizontal .form-group-lg #loginform select.input, #loginform .form-horizontal .form-group-lg select.input, .input-group-lg > select.form-control, body.login #login form p .input-group-lg > select.input, #loginform .input-group-lg > select.input,
+select.input-lg, .input-group-lg > select.form-control, body.login #login form p .input-group-lg > select.input, #loginform .input-group-lg > select.input,
 .input-group-lg > select.input-group-addon,
 .input-group-lg > .input-group-btn > select.btn,
 body.login #login form p.submit .input-group-lg > .input-group-btn > select#wp-submit,
@@ -3209,18 +3466,13 @@ body.login #login form p.submit .input-group-lg > .input-group-btn > select#wp-s
   line-height: 46px;
 }
 
-textarea.input-lg, .form-horizontal .form-group-lg textarea.form-control, .form-horizontal .form-group-lg body.login #login form p textarea.input, body.login #login form p .form-horizontal .form-group-lg textarea.input, .form-horizontal .form-group-lg #loginform textarea.input, #loginform .form-horizontal .form-group-lg textarea.input, .input-group-lg > textarea.form-control, body.login #login form p .input-group-lg > textarea.input, #loginform .input-group-lg > textarea.input,
+textarea.input-lg, .input-group-lg > textarea.form-control, body.login #login form p .input-group-lg > textarea.input, #loginform .input-group-lg > textarea.input,
 .input-group-lg > textarea.input-group-addon,
 .input-group-lg > .input-group-btn > textarea.btn,
 body.login #login form p.submit .input-group-lg > .input-group-btn > textarea#wp-submit,
 .input-group-lg > .input-group-btn > textarea#wp-submit,
 .input-group-lg > .input-group-btn > textarea.gform_button,
 select[multiple].input-lg,
-.form-horizontal .form-group-lg select[multiple].form-control,
-.form-horizontal .form-group-lg body.login #login form p select[multiple].input,
-body.login #login form p .form-horizontal .form-group-lg select[multiple].input,
-.form-horizontal .form-group-lg #loginform select[multiple].input,
-#loginform .form-horizontal .form-group-lg select[multiple].input,
 .input-group-lg > select[multiple].form-control,
 body.login #login form p .input-group-lg > select[multiple].input,
 #loginform .input-group-lg > select[multiple].input,
@@ -3232,6 +3484,33 @@ body.login #login form p.submit .input-group-lg > .input-group-btn > select[mult
   height: auto;
 }
 
+.form-group-lg .form-control, .form-group-lg body.login #login form p .input, body.login #login form p .form-group-lg .input, .form-group-lg #loginform .input, #loginform .form-group-lg .input {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+.form-group-lg select.form-control, .form-group-lg body.login #login form p select.input, body.login #login form p .form-group-lg select.input, .form-group-lg #loginform select.input, #loginform .form-group-lg select.input {
+  height: 46px;
+  line-height: 46px;
+}
+.form-group-lg textarea.form-control, .form-group-lg body.login #login form p textarea.input, body.login #login form p .form-group-lg textarea.input, .form-group-lg #loginform textarea.input, #loginform .form-group-lg textarea.input,
+.form-group-lg select[multiple].form-control,
+.form-group-lg body.login #login form p select[multiple].input,
+body.login #login form p .form-group-lg select[multiple].input,
+.form-group-lg #loginform select[multiple].input,
+#loginform .form-group-lg select[multiple].input {
+  height: auto;
+}
+.form-group-lg .form-control-static {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  min-height: 38px;
+}
+
 .has-feedback {
   position: relative;
 }
@@ -3241,7 +3520,7 @@ body.login #login form p.submit .input-group-lg > .input-group-btn > select[mult
 
 .form-control-feedback {
   position: absolute;
-  top: 25px;
+  top: 0;
   right: 0;
   z-index: 2;
   display: block;
@@ -3249,9 +3528,10 @@ body.login #login form p.submit .input-group-lg > .input-group-btn > select[mult
   height: 34px;
   line-height: 34px;
   text-align: center;
+  pointer-events: none;
 }
 
-.input-lg + .form-control-feedback, .form-horizontal .form-group-lg .form-control + .form-control-feedback, .form-horizontal .form-group-lg body.login #login form p .input + .form-control-feedback, body.login #login form p .form-horizontal .form-group-lg .input + .form-control-feedback, .form-horizontal .form-group-lg #loginform .input + .form-control-feedback, #loginform .form-horizontal .form-group-lg .input + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, body.login #login form p .input-group-lg > .input + .form-control-feedback, #loginform .input-group-lg > .input + .form-control-feedback,
+.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, body.login #login form p .input-group-lg > .input + .form-control-feedback, #loginform .input-group-lg > .input + .form-control-feedback,
 .input-group-lg > .input-group-addon + .form-control-feedback,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
 body.login #login form p.submit .input-group-lg > .input-group-btn > #wp-submit + .form-control-feedback,
@@ -3262,7 +3542,7 @@ body.login #login form p.submit .input-group-lg > .input-group-btn > #wp-submit 
   line-height: 46px;
 }
 
-.input-sm + .form-control-feedback, .form-horizontal .form-group-sm .form-control + .form-control-feedback, .form-horizontal .form-group-sm body.login #login form p .input + .form-control-feedback, body.login #login form p .form-horizontal .form-group-sm .input + .form-control-feedback, .form-horizontal .form-group-sm #loginform .input + .form-control-feedback, #loginform .form-horizontal .form-group-sm .input + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, body.login #login form p .input-group-sm > .input + .form-control-feedback, #loginform .input-group-sm > .input + .form-control-feedback,
+.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, body.login #login form p .input-group-sm > .input + .form-control-feedback, #loginform .input-group-sm > .input + .form-control-feedback,
 .input-group-sm > .input-group-addon + .form-control-feedback,
 .input-group-sm > .input-group-btn > .btn + .form-control-feedback,
 body.login #login form p.submit .input-group-sm > .input-group-btn > #wp-submit + .form-control-feedback,
@@ -3283,7 +3563,7 @@ body.login #login form p.submit .input-group-sm > .input-group-btn > #wp-submit 
 body.login #login form .has-success p.forgetmenot,
 .has-success .login-remember,
 .has-success .radio-inline,
-.has-success .checkbox-inline {
+.has-success .checkbox-inline, .has-success.radio label, .has-success.checkbox label, body.login #login form p.has-success.forgetmenot label, .has-success.login-remember label, .has-success.radio-inline label, .has-success.checkbox-inline label {
   color: #3c763d;
 }
 .has-success .form-control, .has-success body.login #login form p .input, body.login #login form p .has-success .input, .has-success #loginform .input, #loginform .has-success .input {
@@ -3315,7 +3595,7 @@ body.login #login form .has-success p.forgetmenot,
 body.login #login form .has-warning p.forgetmenot,
 .has-warning .login-remember,
 .has-warning .radio-inline,
-.has-warning .checkbox-inline {
+.has-warning .checkbox-inline, .has-warning.radio label, .has-warning.checkbox label, body.login #login form p.has-warning.forgetmenot label, .has-warning.login-remember label, .has-warning.radio-inline label, .has-warning.checkbox-inline label {
   color: #8a6d3b;
 }
 .has-warning .form-control, .has-warning body.login #login form p .input, body.login #login form p .has-warning .input, .has-warning #loginform .input, #loginform .has-warning .input {
@@ -3356,7 +3636,7 @@ body.login #login form .gfield.gfield_error p.forgetmenot,
 .has-error .radio-inline,
 .gfield.gfield_error .radio-inline,
 .has-error .checkbox-inline,
-.gfield.gfield_error .checkbox-inline {
+.gfield.gfield_error .checkbox-inline, .has-error.radio label, .radio.gfield.gfield_error label, .has-error.checkbox label, body.login #login form p.has-error.forgetmenot label, body.login #login form p.forgetmenot.gfield.gfield_error label, .has-error.login-remember label, .login-remember.gfield.gfield_error label, .checkbox.gfield.gfield_error label, .has-error.radio-inline label, .radio-inline.gfield.gfield_error label, .has-error.checkbox-inline label, .checkbox-inline.gfield.gfield_error label {
   color: #a94442;
 }
 .has-error .form-control, .gfield.gfield_error .form-control, .has-error body.login #login form p .input, body.login #login form p .has-error .input, .gfield.gfield_error body.login #login form p .input, body.login #login form p .gfield.gfield_error .input, .has-error #loginform .input, #loginform .has-error .input, .gfield.gfield_error #loginform .input, #loginform .gfield.gfield_error .input {
@@ -3378,6 +3658,9 @@ body.login #login form .gfield.gfield_error p.forgetmenot,
   color: #a94442;
 }
 
+.has-feedback label ~ .form-control-feedback {
+  top: 25px;
+}
 .has-feedback label.sr-only ~ .form-control-feedback, .has-feedback .question-form label ~ .form-control-feedback, .question-form .has-feedback label ~ .form-control-feedback {
   top: 0;
 }
@@ -3390,80 +3673,65 @@ body.login #login form .gfield.gfield_error p.forgetmenot,
 }
 
 @media (min-width: 768px) {
-  .form-inline .form-group, .navbar-form .form-group, .form-inline body.login #login form p, body.login #login form .form-inline p, .navbar-form body.login #login form p, body.login #login form .navbar-form p, .form-inline .login-username, .navbar-form .login-username, .form-inline .login-password, .navbar-form .login-password, .form-inline .gfield, .navbar-form .gfield {
+  .form-inline .form-group, .form-inline body.login #login form p, body.login #login form .form-inline p, .form-inline .login-username, .form-inline .login-password, .form-inline .gfield {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
   }
-  .form-inline .form-control, .navbar-form .form-control, .form-inline body.login #login form p .input, body.login #login form p .form-inline .input, .navbar-form body.login #login form p .input, body.login #login form p .navbar-form .input, .form-inline #loginform .input, #loginform .form-inline .input, .navbar-form #loginform .input, #loginform .navbar-form .input {
+  .form-inline .form-control, .form-inline body.login #login form p .input, body.login #login form p .form-inline .input, .form-inline #loginform .input, #loginform .form-inline .input {
     display: inline-block;
     width: auto;
     vertical-align: middle;
   }
-  .form-inline .input-group, .navbar-form .input-group {
+  .form-inline .form-control-static {
+    display: inline-block;
+  }
+  .form-inline .input-group {
     display: inline-table;
     vertical-align: middle;
   }
-  .form-inline .input-group .input-group-addon, .navbar-form .input-group .input-group-addon,
+  .form-inline .input-group .input-group-addon,
   .form-inline .input-group .input-group-btn,
-  .navbar-form .input-group .input-group-btn,
   .form-inline .input-group .form-control,
-  .navbar-form .input-group .form-control,
   .form-inline .input-group body.login #login form p .input,
   body.login #login form p .form-inline .input-group .input,
-  .navbar-form .input-group body.login #login form p .input,
-  body.login #login form p .navbar-form .input-group .input,
   .form-inline .input-group #loginform .input,
-  #loginform .form-inline .input-group .input,
-  .navbar-form .input-group #loginform .input,
-  #loginform .navbar-form .input-group .input {
+  #loginform .form-inline .input-group .input {
     width: auto;
   }
-  .form-inline .input-group > .form-control, .navbar-form .input-group > .form-control, .form-inline body.login #login form p .input-group > .input, body.login #login form p .form-inline .input-group > .input, .navbar-form body.login #login form p .input-group > .input, body.login #login form p .navbar-form .input-group > .input, .form-inline #loginform .input-group > .input, #loginform .form-inline .input-group > .input, .navbar-form #loginform .input-group > .input, #loginform .navbar-form .input-group > .input {
+  .form-inline .input-group > .form-control, .form-inline body.login #login form p .input-group > .input, body.login #login form p .form-inline .input-group > .input, .form-inline #loginform .input-group > .input, #loginform .form-inline .input-group > .input {
     width: 100%;
   }
-  .form-inline .control-label, .navbar-form .control-label, .form-inline .gfield .gfield_label, .gfield .form-inline .gfield_label, .navbar-form .gfield .gfield_label, .gfield .navbar-form .gfield_label {
+  .form-inline .control-label, .form-inline .gfield .gfield_label, .gfield .form-inline .gfield_label {
     margin-bottom: 0;
     vertical-align: middle;
   }
-  .form-inline .radio, .navbar-form .radio,
+  .form-inline .radio,
   .form-inline .checkbox,
-  .navbar-form .checkbox,
   .form-inline body.login #login form p.forgetmenot,
   body.login #login form .form-inline p.forgetmenot,
-  .navbar-form body.login #login form p.forgetmenot,
-  body.login #login form .navbar-form p.forgetmenot,
-  .form-inline .login-remember,
-  .navbar-form .login-remember {
+  .form-inline .login-remember {
     display: inline-block;
     margin-top: 0;
     margin-bottom: 0;
     vertical-align: middle;
   }
-  .form-inline .radio label, .navbar-form .radio label,
+  .form-inline .radio label,
   .form-inline .checkbox label,
-  .navbar-form .checkbox label,
   .form-inline body.login #login form p.forgetmenot label,
   body.login #login form .form-inline p.forgetmenot label,
-  .navbar-form body.login #login form p.forgetmenot label,
-  body.login #login form .navbar-form p.forgetmenot label,
-  .form-inline .login-remember label,
-  .navbar-form .login-remember label {
+  .form-inline .login-remember label {
     padding-left: 0;
   }
-  .form-inline .radio input[type="radio"], .navbar-form .radio input[type="radio"],
+  .form-inline .radio input[type="radio"],
   .form-inline .checkbox input[type="checkbox"],
-  .navbar-form .checkbox input[type="checkbox"],
   .form-inline body.login #login form p.forgetmenot input[type="checkbox"],
   body.login #login form .form-inline p.forgetmenot input[type="checkbox"],
-  .navbar-form body.login #login form p.forgetmenot input[type="checkbox"],
-  body.login #login form .navbar-form p.forgetmenot input[type="checkbox"],
-  .form-inline .login-remember input[type="checkbox"],
-  .navbar-form .login-remember input[type="checkbox"] {
+  .form-inline .login-remember input[type="checkbox"] {
     position: relative;
     margin-left: 0;
   }
-  .form-inline .has-feedback .form-control-feedback, .navbar-form .has-feedback .form-control-feedback {
+  .form-inline .has-feedback .form-control-feedback {
     top: 0;
   }
 }
@@ -3505,12 +3773,11 @@ body.login #login form .form-horizontal p.forgetmenot,
   }
 }
 .form-horizontal .has-feedback .form-control-feedback {
-  top: 0;
   right: 15px;
 }
 @media (min-width: 768px) {
   .form-horizontal .form-group-lg .control-label, .form-horizontal .form-group-lg .gfield .gfield_label, .gfield .form-horizontal .form-group-lg .gfield_label {
-    padding-top: 14.3px;
+    padding-top: 14.333333px;
   }
 }
 @media (min-width: 768px) {
@@ -3525,26 +3792,27 @@ body.login #login form .form-horizontal p.forgetmenot,
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
+  touch-action: manipulation;
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 6px 12px;
   font-size: 14px;
-  line-height: 1.42857;
+  line-height: 1.428571429;
   border-radius: 4px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
-.btn:focus, body.login #login form p.submit #wp-submit:focus, #wp-submit:focus, .gform_button:focus, .btn:active:focus, body.login #login form p.submit #wp-submit:active:focus, #wp-submit:active:focus, .gform_button:active:focus, .btn.active:focus, body.login #login form p.submit .active#wp-submit:focus, .active#wp-submit:focus, .active.gform_button:focus {
+.btn:focus, body.login #login form p.submit #wp-submit:focus, #wp-submit:focus, .gform_button:focus, .btn.focus, body.login #login form p.submit .focus#wp-submit, .focus#wp-submit, .focus.gform_button, .btn:active:focus, body.login #login form p.submit #wp-submit:active:focus, #wp-submit:active:focus, .gform_button:active:focus, .btn:active.focus, body.login #login form p.submit #wp-submit:active.focus, #wp-submit:active.focus, .gform_button:active.focus, .btn.active:focus, body.login #login form p.submit .active#wp-submit:focus, .active#wp-submit:focus, .active.gform_button:focus, .btn.active.focus, body.login #login form p.submit .active.focus#wp-submit, .active.focus#wp-submit, .active.focus.gform_button {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-.btn:hover, body.login #login form p.submit #wp-submit:hover, #wp-submit:hover, .gform_button:hover, .btn:focus, body.login #login form p.submit #wp-submit:focus, #wp-submit:focus, .gform_button:focus {
-  color: #333333;
+.btn:hover, body.login #login form p.submit #wp-submit:hover, #wp-submit:hover, .gform_button:hover, .btn:focus, body.login #login form p.submit #wp-submit:focus, #wp-submit:focus, .gform_button:focus, .btn.focus, body.login #login form p.submit .focus#wp-submit, .focus#wp-submit, .focus.gform_button {
+  color: #333;
   text-decoration: none;
 }
 .btn:active, body.login #login form p.submit #wp-submit:active, #wp-submit:active, .gform_button:active, .btn.active, body.login #login form p.submit .active#wp-submit, .active#wp-submit, .active.gform_button {
@@ -3563,144 +3831,143 @@ body.login #login form .form-horizontal p.forgetmenot,
 }
 
 .btn-default {
-  color: #333333;
-  background-color: white;
-  border-color: #cccccc;
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
 }
-.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
-  color: #333333;
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+  color: #333;
   background-color: #e6e6e6;
   border-color: #adadad;
 }
 .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
   background-image: none;
 }
-.btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
-  background-color: white;
-  border-color: #cccccc;
+.btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled].focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
+  background-color: #fff;
+  border-color: #ccc;
 }
 .btn-default .badge {
-  color: white;
-  background-color: #333333;
+  color: #fff;
+  background-color: #333;
 }
 
 .btn-primary {
-  color: white;
+  color: #fff;
   background-color: #8ab98e;
   border-color: #7aaf7f;
 }
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
-  color: white;
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  color: #fff;
   background-color: #6aa66f;
   border-color: #58945e;
 }
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
   background-image: none;
 }
-.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
+.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
   background-color: #8ab98e;
   border-color: #7aaf7f;
 }
 .btn-primary .badge {
   color: #8ab98e;
-  background-color: white;
+  background-color: #fff;
 }
 
 .btn-success, body.login #login form p.submit #wp-submit, #wp-submit {
-  color: white;
+  color: #fff;
   background-color: #5c9961;
   border-color: #528957;
 }
-.btn-success:hover, body.login #login form p.submit #wp-submit:hover, #wp-submit:hover, .btn-success:focus, body.login #login form p.submit #wp-submit:focus, #wp-submit:focus, .btn-success:active, body.login #login form p.submit #wp-submit:active, #wp-submit:active, .btn-success.active, body.login #login form p.submit .active#wp-submit, .active#wp-submit, .open > .btn-success.dropdown-toggle, body.login #login form p.submit .open > .dropdown-toggle#wp-submit, .open > .dropdown-toggle#wp-submit {
-  color: white;
+.btn-success:hover, body.login #login form p.submit #wp-submit:hover, #wp-submit:hover, .btn-success:focus, body.login #login form p.submit #wp-submit:focus, #wp-submit:focus, .btn-success.focus, body.login #login form p.submit .focus#wp-submit, .focus#wp-submit, .btn-success:active, body.login #login form p.submit #wp-submit:active, #wp-submit:active, .btn-success.active, body.login #login form p.submit .active#wp-submit, .active#wp-submit, .open > .btn-success.dropdown-toggle, body.login #login form p.submit .open > .dropdown-toggle#wp-submit, .open > .dropdown-toggle#wp-submit {
+  color: #fff;
   background-color: #49794d;
   border-color: #3b633f;
 }
 .btn-success:active, body.login #login form p.submit #wp-submit:active, #wp-submit:active, .btn-success.active, body.login #login form p.submit .active#wp-submit, .active#wp-submit, .open > .btn-success.dropdown-toggle, body.login #login form p.submit .open > .dropdown-toggle#wp-submit, .open > .dropdown-toggle#wp-submit {
   background-image: none;
 }
-.btn-success.disabled, body.login #login form p.submit .disabled#wp-submit, .disabled#wp-submit, .btn-success.disabled:hover, body.login #login form p.submit .disabled#wp-submit:hover, .disabled#wp-submit:hover, .btn-success.disabled:focus, body.login #login form p.submit .disabled#wp-submit:focus, .disabled#wp-submit:focus, .btn-success.disabled:active, body.login #login form p.submit .disabled#wp-submit:active, .disabled#wp-submit:active, .btn-success.disabled.active, body.login #login form p.submit .disabled.active#wp-submit, .disabled.active#wp-submit, .btn-success[disabled], body.login #login form p.submit [disabled]#wp-submit, [disabled]#wp-submit, .btn-success[disabled]:hover, body.login #login form p.submit [disabled]#wp-submit:hover, [disabled]#wp-submit:hover, .btn-success[disabled]:focus, body.login #login form p.submit [disabled]#wp-submit:focus, [disabled]#wp-submit:focus, .btn-success[disabled]:active, body.login #login form p.submit [disabled]#wp-submit:active, [disabled]#wp-submit:active, .btn-success[disabled].active, body.login #login form p.submit [disabled].active#wp-submit, [disabled].active#wp-submit, fieldset[disabled] .btn-success, fieldset[disabled] body.login #login form p.submit #wp-submit, body.login #login form p.submit fieldset[disabled] #wp-submit, fieldset[disabled] #wp-submit, fieldset[disabled] .btn-success:hover, fieldset[disabled] body.login #login form p.submit #wp-submit:hover, body.login #login form p.submit fieldset[disabled] #wp-submit:hover, fieldset[disabled] #wp-submit:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] body.login #login form p.submit #wp-submit:focus, body.login #login form p.submit fieldset[disabled] #wp-submit:focus, fieldset[disabled] #wp-submit:focus, fieldset[disabled] .btn-success:active, fieldset[disabled] body.login #login form p.submit #wp-submit:active, body.login #login form p.submit fieldset[disabled] #wp-submit:active, fieldset[disabled] #wp-submit:active, fieldset[disabled] .btn-success.active, fieldset[disabled] body.login #login form p.submit .active#wp-submit, body.login #login form p.submit fieldset[disabled] .active#wp-submit, fieldset[disabled] .active#wp-submit {
+.btn-success.disabled, body.login #login form p.submit .disabled#wp-submit, .disabled#wp-submit, .btn-success.disabled:hover, body.login #login form p.submit .disabled#wp-submit:hover, .disabled#wp-submit:hover, .btn-success.disabled:focus, body.login #login form p.submit .disabled#wp-submit:focus, .disabled#wp-submit:focus, .btn-success.disabled.focus, body.login #login form p.submit .disabled.focus#wp-submit, .disabled.focus#wp-submit, .btn-success.disabled:active, body.login #login form p.submit .disabled#wp-submit:active, .disabled#wp-submit:active, .btn-success.disabled.active, body.login #login form p.submit .disabled.active#wp-submit, .disabled.active#wp-submit, .btn-success[disabled], body.login #login form p.submit [disabled]#wp-submit, [disabled]#wp-submit, .btn-success[disabled]:hover, body.login #login form p.submit [disabled]#wp-submit:hover, [disabled]#wp-submit:hover, .btn-success[disabled]:focus, body.login #login form p.submit [disabled]#wp-submit:focus, [disabled]#wp-submit:focus, .btn-success[disabled].focus, body.login #login form p.submit [disabled].focus#wp-submit, [disabled].focus#wp-submit, .btn-success[disabled]:active, body.login #login form p.submit [disabled]#wp-submit:active, [disabled]#wp-submit:active, .btn-success[disabled].active, body.login #login form p.submit [disabled].active#wp-submit, [disabled].active#wp-submit, fieldset[disabled] .btn-success, fieldset[disabled] body.login #login form p.submit #wp-submit, body.login #login form p.submit fieldset[disabled] #wp-submit, fieldset[disabled] #wp-submit, fieldset[disabled] .btn-success:hover, fieldset[disabled] body.login #login form p.submit #wp-submit:hover, body.login #login form p.submit fieldset[disabled] #wp-submit:hover, fieldset[disabled] #wp-submit:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] body.login #login form p.submit #wp-submit:focus, body.login #login form p.submit fieldset[disabled] #wp-submit:focus, fieldset[disabled] #wp-submit:focus, fieldset[disabled] .btn-success.focus, fieldset[disabled] body.login #login form p.submit .focus#wp-submit, body.login #login form p.submit fieldset[disabled] .focus#wp-submit, fieldset[disabled] .focus#wp-submit, fieldset[disabled] .btn-success:active, fieldset[disabled] body.login #login form p.submit #wp-submit:active, body.login #login form p.submit fieldset[disabled] #wp-submit:active, fieldset[disabled] #wp-submit:active, fieldset[disabled] .btn-success.active, fieldset[disabled] body.login #login form p.submit .active#wp-submit, body.login #login form p.submit fieldset[disabled] .active#wp-submit, fieldset[disabled] .active#wp-submit {
   background-color: #5c9961;
   border-color: #528957;
 }
 .btn-success .badge, body.login #login form p.submit #wp-submit .badge, #wp-submit .badge {
   color: #5c9961;
-  background-color: white;
+  background-color: #fff;
 }
 
 .btn-info, .gform_button {
-  color: white;
+  color: #fff;
   background-color: #96b3c5;
   border-color: #86a7bc;
 }
-.btn-info:hover, .gform_button:hover, .btn-info:focus, .gform_button:focus, .btn-info:active, .gform_button:active, .btn-info.active, .active.gform_button, .open > .btn-info.dropdown-toggle, .open > .dropdown-toggle.gform_button {
-  color: white;
+.btn-info:hover, .gform_button:hover, .btn-info:focus, .gform_button:focus, .btn-info.focus, .focus.gform_button, .btn-info:active, .gform_button:active, .btn-info.active, .active.gform_button, .open > .btn-info.dropdown-toggle, .open > .dropdown-toggle.gform_button {
+  color: #fff;
   background-color: #759bb3;
   border-color: #5e8ba6;
 }
 .btn-info:active, .gform_button:active, .btn-info.active, .active.gform_button, .open > .btn-info.dropdown-toggle, .open > .dropdown-toggle.gform_button {
   background-image: none;
 }
-.btn-info.disabled, .disabled.gform_button, .btn-info.disabled:hover, .disabled.gform_button:hover, .btn-info.disabled:focus, .disabled.gform_button:focus, .btn-info.disabled:active, .disabled.gform_button:active, .btn-info.disabled.active, .disabled.active.gform_button, .btn-info[disabled], [disabled].gform_button, .btn-info[disabled]:hover, [disabled].gform_button:hover, .btn-info[disabled]:focus, [disabled].gform_button:focus, .btn-info[disabled]:active, [disabled].gform_button:active, .btn-info[disabled].active, [disabled].active.gform_button, fieldset[disabled] .btn-info, fieldset[disabled] .gform_button, fieldset[disabled] .btn-info:hover, fieldset[disabled] .gform_button:hover, fieldset[disabled] .btn-info:focus, fieldset[disabled] .gform_button:focus, fieldset[disabled] .btn-info:active, fieldset[disabled] .gform_button:active, fieldset[disabled] .btn-info.active, fieldset[disabled] .active.gform_button {
+.btn-info.disabled, .disabled.gform_button, .btn-info.disabled:hover, .disabled.gform_button:hover, .btn-info.disabled:focus, .disabled.gform_button:focus, .btn-info.disabled.focus, .disabled.focus.gform_button, .btn-info.disabled:active, .disabled.gform_button:active, .btn-info.disabled.active, .disabled.active.gform_button, .btn-info[disabled], [disabled].gform_button, .btn-info[disabled]:hover, [disabled].gform_button:hover, .btn-info[disabled]:focus, [disabled].gform_button:focus, .btn-info[disabled].focus, [disabled].focus.gform_button, .btn-info[disabled]:active, [disabled].gform_button:active, .btn-info[disabled].active, [disabled].active.gform_button, fieldset[disabled] .btn-info, fieldset[disabled] .gform_button, fieldset[disabled] .btn-info:hover, fieldset[disabled] .gform_button:hover, fieldset[disabled] .btn-info:focus, fieldset[disabled] .gform_button:focus, fieldset[disabled] .btn-info.focus, fieldset[disabled] .focus.gform_button, fieldset[disabled] .btn-info:active, fieldset[disabled] .gform_button:active, fieldset[disabled] .btn-info.active, fieldset[disabled] .active.gform_button {
   background-color: #96b3c5;
   border-color: #86a7bc;
 }
 .btn-info .badge, .gform_button .badge {
   color: #96b3c5;
-  background-color: white;
+  background-color: #fff;
 }
 
 .btn-warning {
-  color: white;
+  color: #fff;
   background-color: #fbd037;
   border-color: #fbca1e;
 }
-.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle {
-  color: white;
+.btn-warning:hover, .btn-warning:focus, .btn-warning.focus, .btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle {
+  color: #fff;
   background-color: #fac405;
   border-color: #d7a904;
 }
 .btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle {
   background-image: none;
 }
-.btn-warning.disabled, .btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled:active, .btn-warning.disabled.active, .btn-warning[disabled], .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled]:active, .btn-warning[disabled].active, fieldset[disabled] .btn-warning, fieldset[disabled] .btn-warning:hover, fieldset[disabled] .btn-warning:focus, fieldset[disabled] .btn-warning:active, fieldset[disabled] .btn-warning.active {
+.btn-warning.disabled, .btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled.focus, .btn-warning.disabled:active, .btn-warning.disabled.active, .btn-warning[disabled], .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled].focus, .btn-warning[disabled]:active, .btn-warning[disabled].active, fieldset[disabled] .btn-warning, fieldset[disabled] .btn-warning:hover, fieldset[disabled] .btn-warning:focus, fieldset[disabled] .btn-warning.focus, fieldset[disabled] .btn-warning:active, fieldset[disabled] .btn-warning.active {
   background-color: #fbd037;
   border-color: #fbca1e;
 }
 .btn-warning .badge {
   color: #fbd037;
-  background-color: white;
+  background-color: #fff;
 }
 
 .btn-danger {
-  color: white;
+  color: #fff;
   background-color: #ca3f3f;
   border-color: #bc3434;
 }
-.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
-  color: white;
+.btn-danger:hover, .btn-danger:focus, .btn-danger.focus, .btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
+  color: #fff;
   background-color: #a82e2e;
   border-color: #8c2727;
 }
 .btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
   background-image: none;
 }
-.btn-danger.disabled, .btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled:active, .btn-danger.disabled.active, .btn-danger[disabled], .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled]:active, .btn-danger[disabled].active, fieldset[disabled] .btn-danger, fieldset[disabled] .btn-danger:hover, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger:active, fieldset[disabled] .btn-danger.active {
+.btn-danger.disabled, .btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled.focus, .btn-danger.disabled:active, .btn-danger.disabled.active, .btn-danger[disabled], .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled].focus, .btn-danger[disabled]:active, .btn-danger[disabled].active, fieldset[disabled] .btn-danger, fieldset[disabled] .btn-danger:hover, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger.focus, fieldset[disabled] .btn-danger:active, fieldset[disabled] .btn-danger.active {
   background-color: #ca3f3f;
   border-color: #bc3434;
 }
 .btn-danger .badge {
   color: #ca3f3f;
-  background-color: white;
+  background-color: #fff;
 }
 
 .btn-link {
   color: #8ab98e;
   font-weight: normal;
-  cursor: pointer;
   border-radius: 0;
 }
-.btn-link, .btn-link:active, .btn-link[disabled], fieldset[disabled] .btn-link {
+.btn-link, .btn-link:active, .btn-link.active, .btn-link[disabled], fieldset[disabled] .btn-link {
   background-color: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -3721,7 +3988,7 @@ body.login #login form .form-horizontal p.forgetmenot,
 .btn-lg, .btn-group-lg > .btn, body.login #login form p.submit .btn-group-lg > #wp-submit, .btn-group-lg > .gform_button, #wp-submit {
   padding: 10px 16px;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1.3333333;
   border-radius: 6px;
 }
 
@@ -3785,9 +4052,12 @@ tbody.collapse.in {
   position: relative;
   height: 0;
   overflow: hidden;
-  -webkit-transition: height 0.35s ease;
-  -o-transition: height 0.35s ease;
-  transition: height 0.35s ease;
+  -webkit-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
 }
 
 .caret {
@@ -3796,11 +4066,12 @@ tbody.collapse.in {
   height: 0;
   margin-left: 2px;
   vertical-align: middle;
-  border-top: 4px solid;
+  border-top: 4px dashed;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
 }
 
+.dropup,
 .dropdown {
   position: relative;
 }
@@ -3822,8 +4093,8 @@ tbody.collapse.in {
   list-style: none;
   font-size: 14px;
   text-align: left;
-  background-color: white;
-  border: 1px solid #cccccc;
+  background-color: #fff;
+  border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
@@ -3845,7 +4116,7 @@ tbody.collapse.in {
   padding: 3px 20px;
   clear: both;
   font-weight: normal;
-  line-height: 1.42857;
+  line-height: 1.428571429;
   color: #333333;
   white-space: nowrap;
 }
@@ -3853,11 +4124,11 @@ tbody.collapse.in {
 .dropdown-menu > li > a:hover, body.login #login p#nav .dropdown-menu > li > a:hover, body.login #login p#backtoblog .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, body.login #login p#nav .dropdown-menu > li > a:focus, body.login #login p#backtoblog .dropdown-menu > li > a:focus {
   text-decoration: none;
   color: #262626;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
 }
 
 .dropdown-menu > .active > a, body.login #login p#nav .dropdown-menu > .active > a, body.login #login p#backtoblog .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, body.login #login p#nav .dropdown-menu > .active > a:hover, body.login #login p#backtoblog .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus, body.login #login p#nav .dropdown-menu > .active > a:focus, body.login #login p#backtoblog .dropdown-menu > .active > a:focus {
-  color: white;
+  color: #fff;
   text-decoration: none;
   outline: 0;
   background-color: #8ab98e;
@@ -3866,7 +4137,6 @@ tbody.collapse.in {
 .dropdown-menu > .disabled > a, body.login #login p#nav .dropdown-menu > .disabled > a, body.login #login p#backtoblog .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, body.login #login p#nav .dropdown-menu > .disabled > a:hover, body.login #login p#backtoblog .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus, body.login #login p#nav .dropdown-menu > .disabled > a:focus, body.login #login p#backtoblog .dropdown-menu > .disabled > a:focus {
   color: #777777;
 }
-
 .dropdown-menu > .disabled > a:hover, body.login #login p#nav .dropdown-menu > .disabled > a:hover, body.login #login p#backtoblog .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus, body.login #login p#nav .dropdown-menu > .disabled > a:focus, body.login #login p#backtoblog .dropdown-menu > .disabled > a:focus {
   text-decoration: none;
   background-color: transparent;
@@ -3896,7 +4166,7 @@ tbody.collapse.in {
   display: block;
   padding: 3px 20px;
   font-size: 12px;
-  line-height: 1.42857;
+  line-height: 1.428571429;
   color: #777777;
   white-space: nowrap;
 }
@@ -3925,7 +4195,7 @@ tbody.collapse.in {
 .navbar-fixed-bottom .dropdown .dropdown-menu {
   top: auto;
   bottom: 100%;
-  margin-bottom: 1px;
+  margin-bottom: 2px;
 }
 
 @media (min-width: 768px) {
@@ -3970,13 +4240,6 @@ body.login #login form p.submit .btn-group-vertical > .active#wp-submit,
 .btn-group-vertical > .active#wp-submit,
 .btn-group-vertical > .active.gform_button {
   z-index: 2;
-}
-.btn-group > .btn:focus, body.login #login form p.submit .btn-group > #wp-submit:focus, .btn-group > #wp-submit:focus, .btn-group > .gform_button:focus,
-.btn-group-vertical > .btn:focus,
-body.login #login form p.submit .btn-group-vertical > #wp-submit:focus,
-.btn-group-vertical > #wp-submit:focus,
-.btn-group-vertical > .gform_button:focus {
-  outline: 0;
 }
 
 .btn-group .btn + .btn, .btn-group body.login #login form p.submit #wp-submit + .btn, body.login #login form p.submit .btn-group #wp-submit + .btn, .btn-group #wp-submit + .btn, .btn-group .gform_button + .btn, .btn-group body.login #login form p.submit .btn + #wp-submit, body.login #login form p.submit .btn-group .btn + #wp-submit, .btn-group body.login #login form p.submit .gform_button + #wp-submit, body.login #login form p.submit .btn-group .gform_button + #wp-submit, .btn-group .btn + #wp-submit, .btn-group body.login #login form p.submit #wp-submit + #wp-submit, body.login #login form p.submit .btn-group #wp-submit + #wp-submit, .btn-group #wp-submit + #wp-submit, .btn-group .gform_button + #wp-submit, .btn-group .btn + .gform_button, .btn-group body.login #login form p.submit #wp-submit + .gform_button, body.login #login form p.submit .btn-group #wp-submit + .gform_button, .btn-group #wp-submit + .gform_button, .btn-group .gform_button + .gform_button,
@@ -4040,13 +4303,13 @@ body.login #login form p.submit .btn-group .btn-group + #wp-submit,
   border-radius: 0;
 }
 
-.btn-group > .btn-group:first-child > .btn:last-child, body.login #login form p.submit .btn-group > .btn-group:first-child > #wp-submit:last-child, .btn-group > .btn-group:first-child > #wp-submit:last-child, .btn-group > .btn-group:first-child > .gform_button:last-child,
-.btn-group > .btn-group:first-child > .dropdown-toggle {
+.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, body.login #login form p.submit .btn-group > .btn-group:first-child:not(:last-child) > #wp-submit:last-child, .btn-group > .btn-group:first-child:not(:last-child) > #wp-submit:last-child, .btn-group > .btn-group:first-child:not(:last-child) > .gform_button:last-child,
+.btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.btn-group > .btn-group:last-child > .btn:first-child, body.login #login form p.submit .btn-group > .btn-group:last-child > #wp-submit:first-child, .btn-group > .btn-group:last-child > #wp-submit:first-child, .btn-group > .btn-group:last-child > .gform_button:first-child {
+.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, body.login #login form p.submit .btn-group > .btn-group:last-child:not(:first-child) > #wp-submit:first-child, .btn-group > .btn-group:last-child:not(:first-child) > #wp-submit:first-child, .btn-group > .btn-group:last-child:not(:first-child) > .gform_button:first-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -4171,15 +4434,22 @@ body.login #login form p.submit .btn-group-vertical > .btn-group + #wp-submit,
   left: auto;
 }
 
-[data-toggle="buttons"] > .btn > input[type="radio"], body.login #login form p.submit [data-toggle="buttons"] > #wp-submit > input[type="radio"], [data-toggle="buttons"] > #wp-submit > input[type="radio"], [data-toggle="buttons"] > .gform_button > input[type="radio"],
-[data-toggle="buttons"] > .btn > input[type="checkbox"],
-body.login #login form p.submit [data-toggle="buttons"] > #wp-submit > input[type="checkbox"],
-[data-toggle="buttons"] > #wp-submit > input[type="checkbox"],
-[data-toggle="buttons"] > .gform_button > input[type="checkbox"] {
+[data-toggle="buttons"] > .btn input[type="radio"], body.login #login form p.submit [data-toggle="buttons"] > #wp-submit input[type="radio"], [data-toggle="buttons"] > #wp-submit input[type="radio"], [data-toggle="buttons"] > .gform_button input[type="radio"],
+[data-toggle="buttons"] > .btn input[type="checkbox"],
+body.login #login form p.submit [data-toggle="buttons"] > #wp-submit input[type="checkbox"],
+[data-toggle="buttons"] > #wp-submit input[type="checkbox"],
+[data-toggle="buttons"] > .gform_button input[type="checkbox"],
+[data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
+body.login #login form p.submit [data-toggle="buttons"] > .btn-group > #wp-submit input[type="radio"],
+[data-toggle="buttons"] > .btn-group > #wp-submit input[type="radio"],
+[data-toggle="buttons"] > .btn-group > .gform_button input[type="radio"],
+[data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"],
+body.login #login form p.submit [data-toggle="buttons"] > .btn-group > #wp-submit input[type="checkbox"],
+[data-toggle="buttons"] > .btn-group > #wp-submit input[type="checkbox"],
+[data-toggle="buttons"] > .btn-group > .gform_button input[type="checkbox"] {
   position: absolute;
-  z-index: -1;
-  opacity: 0;
-  filter: alpha(opacity=0);
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
 }
 
 .input-group {
@@ -4234,10 +4504,10 @@ body.login #login form p .input-group .input:not(:first-child):not(:last-child),
   color: #555555;
   text-align: center;
   background-color: #eeeeee;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
-.input-group-addon.input-sm, .form-horizontal .form-group-sm .input-group-addon.form-control, .form-horizontal .form-group-sm body.login #login form p .input-group-addon.input, body.login #login form p .form-horizontal .form-group-sm .input-group-addon.input, .form-horizontal .form-group-sm #loginform .input-group-addon.input, #loginform .form-horizontal .form-group-sm .input-group-addon.input, body.login #login form p .input-group-sm > .input-group-addon.input, #loginform .input-group-sm > .input-group-addon.input,
+.input-group-addon.input-sm, body.login #login form p .input-group-sm > .input-group-addon.input, #loginform .input-group-sm > .input-group-addon.input,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .input-group-addon.btn,
 body.login #login form p.submit .input-group-sm > .input-group-btn > .input-group-addon#wp-submit,
@@ -4247,7 +4517,7 @@ body.login #login form p.submit .input-group-sm > .input-group-btn > .input-grou
   font-size: 12px;
   border-radius: 3px;
 }
-.input-group-addon.input-lg, .form-horizontal .form-group-lg .input-group-addon.form-control, .form-horizontal .form-group-lg body.login #login form p .input-group-addon.input, body.login #login form p .form-horizontal .form-group-lg .input-group-addon.input, .form-horizontal .form-group-lg #loginform .input-group-addon.input, #loginform .form-horizontal .form-group-lg .input-group-addon.input, body.login #login form p .input-group-lg > .input-group-addon.input, #loginform .input-group-lg > .input-group-addon.input,
+.input-group-addon.input-lg, body.login #login form p .input-group-lg > .input-group-addon.input, #loginform .input-group-lg > .input-group-addon.input,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .input-group-addon.btn,
 body.login #login form p.submit .input-group-lg > .input-group-btn > .input-group-addon#wp-submit,
@@ -4388,7 +4658,7 @@ body.login #login form p.submit .input-group-btn:first-child > .btn-group:not(:f
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #ddd;
 }
 .nav-tabs > li {
   float: left;
@@ -4396,17 +4666,17 @@ body.login #login form p.submit .input-group-btn:first-child > .btn-group:not(:f
 }
 .nav-tabs > li > a, body.login #login p#nav .nav-tabs > li > a, body.login #login p#backtoblog .nav-tabs > li > a {
   margin-right: 2px;
-  line-height: 1.42857;
+  line-height: 1.428571429;
   border: 1px solid transparent;
   border-radius: 4px 4px 0 0;
 }
 .nav-tabs > li > a:hover, body.login #login p#nav .nav-tabs > li > a:hover, body.login #login p#backtoblog .nav-tabs > li > a:hover {
-  border-color: #eeeeee #eeeeee #dddddd;
+  border-color: #eeeeee #eeeeee #ddd;
 }
 .nav-tabs > li.active > a, body.login #login p#nav .nav-tabs > li.active > a, body.login #login p#backtoblog .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, body.login #login p#nav .nav-tabs > li.active > a:hover, body.login #login p#backtoblog .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus, body.login #login p#nav .nav-tabs > li.active > a:focus, body.login #login p#backtoblog .nav-tabs > li.active > a:focus {
   color: #555555;
   background-color: #f4f4f4;
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
 }
@@ -4421,7 +4691,7 @@ body.login #login form p.submit .input-group-btn:first-child > .btn-group:not(:f
   margin-left: 2px;
 }
 .nav-pills > li.active > a, body.login #login p#nav .nav-pills > li.active > a, body.login #login p#backtoblog .nav-pills > li.active > a, .nav-pills > li.active > a:hover, body.login #login p#nav .nav-pills > li.active > a:hover, body.login #login p#backtoblog .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, body.login #login p#nav .nav-pills > li.active > a:focus, body.login #login p#backtoblog .nav-pills > li.active > a:focus {
-  color: white;
+  color: #fff;
   background-color: #8ab98e;
 }
 
@@ -4477,11 +4747,11 @@ body.login #login p#nav .nav-tabs-justified > .active > a:focus,
 body.login #login p#nav .nav-tabs.nav-justified > .active > a:focus,
 body.login #login p#backtoblog .nav-tabs-justified > .active > a:focus,
 body.login #login p#backtoblog .nav-tabs.nav-justified > .active > a:focus {
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
 }
 @media (min-width: 768px) {
   .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a, body.login #login p#nav .nav-tabs-justified > li > a, body.login #login p#nav .nav-tabs.nav-justified > li > a, body.login #login p#backtoblog .nav-tabs-justified > li > a, body.login #login p#backtoblog .nav-tabs.nav-justified > li > a {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #ddd;
     border-radius: 4px 4px 0 0;
   }
   .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a, body.login #login p#nav .nav-tabs-justified > .active > a, body.login #login p#nav .nav-tabs.nav-justified > .active > a, body.login #login p#backtoblog .nav-tabs-justified > .active > a, body.login #login p#backtoblog .nav-tabs.nav-justified > .active > a,
@@ -4589,7 +4859,7 @@ body.login #login p#backtoblog .nav-tabs.nav-justified > .active > a:focus {
 .navbar-fixed-bottom .navbar-collapse {
   max-height: 340px;
 }
-@media (max-width: 480px) and (orientation: landscape) {
+@media (max-device-width: 480px) and (orientation: landscape) {
   .navbar-fixed-top .navbar-collapse,
   .navbar-fixed-bottom .navbar-collapse {
     max-height: 200px;
@@ -4629,8 +4899,6 @@ body.login #login p#backtoblog .nav-tabs.nav-justified > .active > a:focus {
   right: 0;
   left: 0;
   z-index: 1030;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
 }
 @media (min-width: 768px) {
   .navbar-fixed-top,
@@ -4659,6 +4927,9 @@ body.login #login p#backtoblog .nav-tabs.nav-justified > .active > a:focus {
 }
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
+}
+.navbar-brand > img {
+  display: block;
 }
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
@@ -4737,20 +5008,8 @@ body.login #login p#backtoblog .nav-tabs.nav-justified > .active > a:focus {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  .navbar-nav.navbar-right:last-child {
-    margin-right: -15px;
-  }
 }
 
-@media (min-width: 768px) {
-  .navbar-left {
-    float: left !important;
-  }
-
-  .navbar-right {
-    float: right !important;
-  }
-}
 .navbar-form {
   margin-left: -15px;
   margin-right: -15px;
@@ -4762,9 +5021,75 @@ body.login #login p#backtoblog .nav-tabs.nav-justified > .active > a:focus {
   margin-top: 8px;
   margin-bottom: 8px;
 }
+@media (min-width: 768px) {
+  .navbar-form .form-group, .navbar-form body.login #login form p, body.login #login form .navbar-form p, .navbar-form .login-username, .navbar-form .login-password, .navbar-form .gfield {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .navbar-form .form-control, .navbar-form body.login #login form p .input, body.login #login form p .navbar-form .input, .navbar-form #loginform .input, #loginform .navbar-form .input {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+  .navbar-form .form-control-static {
+    display: inline-block;
+  }
+  .navbar-form .input-group {
+    display: inline-table;
+    vertical-align: middle;
+  }
+  .navbar-form .input-group .input-group-addon,
+  .navbar-form .input-group .input-group-btn,
+  .navbar-form .input-group .form-control,
+  .navbar-form .input-group body.login #login form p .input,
+  body.login #login form p .navbar-form .input-group .input,
+  .navbar-form .input-group #loginform .input,
+  #loginform .navbar-form .input-group .input {
+    width: auto;
+  }
+  .navbar-form .input-group > .form-control, .navbar-form body.login #login form p .input-group > .input, body.login #login form p .navbar-form .input-group > .input, .navbar-form #loginform .input-group > .input, #loginform .navbar-form .input-group > .input {
+    width: 100%;
+  }
+  .navbar-form .control-label, .navbar-form .gfield .gfield_label, .gfield .navbar-form .gfield_label {
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .navbar-form .radio,
+  .navbar-form .checkbox,
+  .navbar-form body.login #login form p.forgetmenot,
+  body.login #login form .navbar-form p.forgetmenot,
+  .navbar-form .login-remember {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .navbar-form .radio label,
+  .navbar-form .checkbox label,
+  .navbar-form body.login #login form p.forgetmenot label,
+  body.login #login form .navbar-form p.forgetmenot label,
+  .navbar-form .login-remember label {
+    padding-left: 0;
+  }
+  .navbar-form .radio input[type="radio"],
+  .navbar-form .checkbox input[type="checkbox"],
+  .navbar-form body.login #login form p.forgetmenot input[type="checkbox"],
+  body.login #login form .navbar-form p.forgetmenot input[type="checkbox"],
+  .navbar-form .login-remember input[type="checkbox"] {
+    position: relative;
+    margin-left: 0;
+  }
+  .navbar-form .has-feedback .form-control-feedback {
+    top: 0;
+  }
+}
 @media (max-width: 767px) {
   .navbar-form .form-group, .navbar-form body.login #login form p, body.login #login form .navbar-form p, .navbar-form .login-username, .navbar-form .login-password, .navbar-form .gfield {
     margin-bottom: 5px;
+  }
+  .navbar-form .form-group:last-child, .navbar-form body.login #login form p:last-child, body.login #login form .navbar-form p:last-child, .navbar-form .login-username:last-child, .navbar-form .login-password:last-child, .navbar-form .gfield:last-child {
+    margin-bottom: 0;
   }
 }
 @media (min-width: 768px) {
@@ -4778,9 +5103,6 @@ body.login #login p#backtoblog .nav-tabs.nav-justified > .active > a:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
   }
-  .navbar-form.navbar-right:last-child {
-    margin-right: -15px;
-  }
 }
 
 .navbar-nav > li > .dropdown-menu {
@@ -4790,6 +5112,9 @@ body.login #login p#backtoblog .nav-tabs.nav-justified > .active > a:focus {
 }
 
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+  margin-bottom: 0;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -4817,48 +5142,58 @@ body.login #login p#backtoblog .nav-tabs.nav-justified > .active > a:focus {
     margin-left: 15px;
     margin-right: 15px;
   }
-  .navbar-text.navbar-right:last-child {
+}
+
+@media (min-width: 768px) {
+  .navbar-left {
+    float: left !important;
+  }
+
+  .navbar-right {
+    float: right !important;
+    margin-right: -15px;
+  }
+  .navbar-right ~ .navbar-right {
     margin-right: 0;
   }
 }
-
 .navbar-default {
   background-color: #f8f8f8;
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
-  color: #777777;
+  color: #777;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
   color: #5e5e5e;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
-  color: #777777;
+  color: #777;
 }
 .navbar-default .navbar-nav > li > a, .navbar-default body.login #login p#nav .navbar-nav > li > a, body.login #login p#nav .navbar-default .navbar-nav > li > a, .navbar-default body.login #login p#backtoblog .navbar-nav > li > a, body.login #login p#backtoblog .navbar-default .navbar-nav > li > a {
-  color: #777777;
+  color: #777;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default body.login #login p#nav .navbar-nav > li > a:hover, body.login #login p#nav .navbar-default .navbar-nav > li > a:hover, .navbar-default body.login #login p#backtoblog .navbar-nav > li > a:hover, body.login #login p#backtoblog .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default body.login #login p#nav .navbar-nav > li > a:focus, body.login #login p#nav .navbar-default .navbar-nav > li > a:focus, .navbar-default body.login #login p#backtoblog .navbar-nav > li > a:focus, body.login #login p#backtoblog .navbar-default .navbar-nav > li > a:focus {
-  color: #333333;
+  color: #333;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default body.login #login p#nav .navbar-nav > .active > a, body.login #login p#nav .navbar-default .navbar-nav > .active > a, .navbar-default body.login #login p#backtoblog .navbar-nav > .active > a, body.login #login p#backtoblog .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default body.login #login p#nav .navbar-nav > .active > a:hover, body.login #login p#nav .navbar-default .navbar-nav > .active > a:hover, .navbar-default body.login #login p#backtoblog .navbar-nav > .active > a:hover, body.login #login p#backtoblog .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default body.login #login p#nav .navbar-nav > .active > a:focus, body.login #login p#nav .navbar-default .navbar-nav > .active > a:focus, .navbar-default body.login #login p#backtoblog .navbar-nav > .active > a:focus, body.login #login p#backtoblog .navbar-default .navbar-nav > .active > a:focus {
-  color: #555555;
+  color: #555;
   background-color: #e7e7e7;
 }
 .navbar-default .navbar-nav > .disabled > a, .navbar-default body.login #login p#nav .navbar-nav > .disabled > a, body.login #login p#nav .navbar-default .navbar-nav > .disabled > a, .navbar-default body.login #login p#backtoblog .navbar-nav > .disabled > a, body.login #login p#backtoblog .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default body.login #login p#nav .navbar-nav > .disabled > a:hover, body.login #login p#nav .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default body.login #login p#backtoblog .navbar-nav > .disabled > a:hover, body.login #login p#backtoblog .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus, .navbar-default body.login #login p#nav .navbar-nav > .disabled > a:focus, body.login #login p#nav .navbar-default .navbar-nav > .disabled > a:focus, .navbar-default body.login #login p#backtoblog .navbar-nav > .disabled > a:focus, body.login #login p#backtoblog .navbar-default .navbar-nav > .disabled > a:focus {
-  color: #cccccc;
+  color: #ccc;
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-  border-color: #dddddd;
+  border-color: #ddd;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #dddddd;
+  background-color: #ddd;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #888888;
+  background-color: #888;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
@@ -4866,78 +5201,78 @@ body.login #login p#backtoblog .nav-tabs.nav-justified > .active > a:focus {
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default body.login #login p#nav .navbar-nav > .open > a, body.login #login p#nav .navbar-default .navbar-nav > .open > a, .navbar-default body.login #login p#backtoblog .navbar-nav > .open > a, body.login #login p#backtoblog .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default body.login #login p#nav .navbar-nav > .open > a:hover, body.login #login p#nav .navbar-default .navbar-nav > .open > a:hover, .navbar-default body.login #login p#backtoblog .navbar-nav > .open > a:hover, body.login #login p#backtoblog .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default body.login #login p#nav .navbar-nav > .open > a:focus, body.login #login p#nav .navbar-default .navbar-nav > .open > a:focus, .navbar-default body.login #login p#backtoblog .navbar-nav > .open > a:focus, body.login #login p#backtoblog .navbar-default .navbar-nav > .open > a:focus {
   background-color: #e7e7e7;
-  color: #555555;
+  color: #555;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a, .navbar-default .navbar-nav .open body.login #login p#nav .dropdown-menu > li > a, body.login #login p#nav .navbar-default .navbar-nav .open .dropdown-menu > li > a, .navbar-default .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > li > a, body.login #login p#backtoblog .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #777777;
+    color: #777;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open body.login #login p#nav .dropdown-menu > li > a:hover, body.login #login p#nav .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > li > a:hover, body.login #login p#backtoblog .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open body.login #login p#nav .dropdown-menu > li > a:focus, body.login #login p#nav .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > li > a:focus, body.login #login p#backtoblog .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #333333;
+    color: #333;
     background-color: transparent;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open body.login #login p#nav .dropdown-menu > .active > a, body.login #login p#nav .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .active > a, body.login #login p#backtoblog .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open body.login #login p#nav .dropdown-menu > .active > a:hover, body.login #login p#nav .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .active > a:hover, body.login #login p#backtoblog .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-default .navbar-nav .open body.login #login p#nav .dropdown-menu > .active > a:focus, body.login #login p#nav .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-default .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .active > a:focus, body.login #login p#backtoblog .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #555555;
+    color: #555;
     background-color: #e7e7e7;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open body.login #login p#nav .dropdown-menu > .disabled > a, body.login #login p#nav .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .disabled > a, body.login #login p#backtoblog .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open body.login #login p#nav .dropdown-menu > .disabled > a:hover, body.login #login p#nav .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .disabled > a:hover, body.login #login p#backtoblog .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-default .navbar-nav .open body.login #login p#nav .dropdown-menu > .disabled > a:focus, body.login #login p#nav .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-default .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .disabled > a:focus, body.login #login p#backtoblog .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-    color: #cccccc;
+    color: #ccc;
     background-color: transparent;
   }
 }
 .navbar-default .navbar-link {
-  color: #777777;
+  color: #777;
 }
 .navbar-default .navbar-link:hover {
-  color: #333333;
+  color: #333;
 }
 .navbar-default .btn-link {
-  color: #777777;
+  color: #777;
 }
 .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
-  color: #333333;
+  color: #333;
 }
 .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus, fieldset[disabled] .navbar-default .btn-link:hover, fieldset[disabled] .navbar-default .btn-link:focus {
-  color: #cccccc;
+  color: #ccc;
 }
 
 .navbar-inverse {
-  background-color: #222222;
+  background-color: #222;
   border-color: #090909;
 }
 .navbar-inverse .navbar-brand {
-  color: #777777;
+  color: #9d9d9d;
 }
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
-  color: white;
+  color: #fff;
   background-color: transparent;
 }
 .navbar-inverse .navbar-text {
-  color: #777777;
+  color: #9d9d9d;
 }
 .navbar-inverse .navbar-nav > li > a, .navbar-inverse body.login #login p#nav .navbar-nav > li > a, body.login #login p#nav .navbar-inverse .navbar-nav > li > a, .navbar-inverse body.login #login p#backtoblog .navbar-nav > li > a, body.login #login p#backtoblog .navbar-inverse .navbar-nav > li > a {
-  color: #777777;
+  color: #9d9d9d;
 }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse body.login #login p#nav .navbar-nav > li > a:hover, body.login #login p#nav .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse body.login #login p#backtoblog .navbar-nav > li > a:hover, body.login #login p#backtoblog .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse body.login #login p#nav .navbar-nav > li > a:focus, body.login #login p#nav .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse body.login #login p#backtoblog .navbar-nav > li > a:focus, body.login #login p#backtoblog .navbar-inverse .navbar-nav > li > a:focus {
-  color: white;
+  color: #fff;
   background-color: transparent;
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse body.login #login p#nav .navbar-nav > .active > a, body.login #login p#nav .navbar-inverse .navbar-nav > .active > a, .navbar-inverse body.login #login p#backtoblog .navbar-nav > .active > a, body.login #login p#backtoblog .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse body.login #login p#nav .navbar-nav > .active > a:hover, body.login #login p#nav .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse body.login #login p#backtoblog .navbar-nav > .active > a:hover, body.login #login p#backtoblog .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse body.login #login p#nav .navbar-nav > .active > a:focus, body.login #login p#nav .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse body.login #login p#backtoblog .navbar-nav > .active > a:focus, body.login #login p#backtoblog .navbar-inverse .navbar-nav > .active > a:focus {
-  color: white;
+  color: #fff;
   background-color: #090909;
 }
 .navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse body.login #login p#nav .navbar-nav > .disabled > a, body.login #login p#nav .navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse body.login #login p#backtoblog .navbar-nav > .disabled > a, body.login #login p#backtoblog .navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse body.login #login p#nav .navbar-nav > .disabled > a:hover, body.login #login p#nav .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse body.login #login p#backtoblog .navbar-nav > .disabled > a:hover, body.login #login p#backtoblog .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > a:focus, .navbar-inverse body.login #login p#nav .navbar-nav > .disabled > a:focus, body.login #login p#nav .navbar-inverse .navbar-nav > .disabled > a:focus, .navbar-inverse body.login #login p#backtoblog .navbar-nav > .disabled > a:focus, body.login #login p#backtoblog .navbar-inverse .navbar-nav > .disabled > a:focus {
-  color: #444444;
+  color: #444;
   background-color: transparent;
 }
 .navbar-inverse .navbar-toggle {
-  border-color: #333333;
+  border-color: #333;
 }
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-  background-color: #333333;
+  background-color: #333;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
-  background-color: white;
+  background-color: #fff;
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
@@ -4945,7 +5280,7 @@ body.login #login p#backtoblog .nav-tabs.nav-justified > .active > a:focus {
 }
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse body.login #login p#nav .navbar-nav > .open > a, body.login #login p#nav .navbar-inverse .navbar-nav > .open > a, .navbar-inverse body.login #login p#backtoblog .navbar-nav > .open > a, body.login #login p#backtoblog .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse body.login #login p#nav .navbar-nav > .open > a:hover, body.login #login p#nav .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse body.login #login p#backtoblog .navbar-nav > .open > a:hover, body.login #login p#backtoblog .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse body.login #login p#nav .navbar-nav > .open > a:focus, body.login #login p#nav .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse body.login #login p#backtoblog .navbar-nav > .open > a:focus, body.login #login p#backtoblog .navbar-inverse .navbar-nav > .open > a:focus {
   background-color: #090909;
-  color: white;
+  color: #fff;
 }
 @media (max-width: 767px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
@@ -4955,51 +5290,51 @@ body.login #login p#backtoblog .nav-tabs.nav-justified > .active > a:focus {
     background-color: #090909;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a, .navbar-inverse .navbar-nav .open body.login #login p#nav .dropdown-menu > li > a, body.login #login p#nav .navbar-inverse .navbar-nav .open .dropdown-menu > li > a, .navbar-inverse .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > li > a, body.login #login p#backtoblog .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-    color: #777777;
+    color: #9d9d9d;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open body.login #login p#nav .dropdown-menu > li > a:hover, body.login #login p#nav .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > li > a:hover, body.login #login p#backtoblog .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-inverse .navbar-nav .open body.login #login p#nav .dropdown-menu > li > a:focus, body.login #login p#nav .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-inverse .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > li > a:focus, body.login #login p#backtoblog .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: white;
+    color: #fff;
     background-color: transparent;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open body.login #login p#nav .dropdown-menu > .active > a, body.login #login p#nav .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .active > a, body.login #login p#backtoblog .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open body.login #login p#nav .dropdown-menu > .active > a:hover, body.login #login p#nav .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .active > a:hover, body.login #login p#backtoblog .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-inverse .navbar-nav .open body.login #login p#nav .dropdown-menu > .active > a:focus, body.login #login p#nav .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-inverse .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .active > a:focus, body.login #login p#backtoblog .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: white;
+    color: #fff;
     background-color: #090909;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open body.login #login p#nav .dropdown-menu > .disabled > a, body.login #login p#nav .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .disabled > a, body.login #login p#backtoblog .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open body.login #login p#nav .dropdown-menu > .disabled > a:hover, body.login #login p#nav .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .disabled > a:hover, body.login #login p#backtoblog .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-inverse .navbar-nav .open body.login #login p#nav .dropdown-menu > .disabled > a:focus, body.login #login p#nav .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-inverse .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .disabled > a:focus, body.login #login p#backtoblog .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-    color: #444444;
+    color: #444;
     background-color: transparent;
   }
 }
 .navbar-inverse .navbar-link {
-  color: #777777;
+  color: #9d9d9d;
 }
 .navbar-inverse .navbar-link:hover {
-  color: white;
+  color: #fff;
 }
 .navbar-inverse .btn-link {
-  color: #777777;
+  color: #9d9d9d;
 }
 .navbar-inverse .btn-link:hover, .navbar-inverse .btn-link:focus {
-  color: white;
+  color: #fff;
 }
 .navbar-inverse .btn-link[disabled]:hover, .navbar-inverse .btn-link[disabled]:focus, fieldset[disabled] .navbar-inverse .btn-link:hover, fieldset[disabled] .navbar-inverse .btn-link:focus {
-  color: #444444;
+  color: #444;
 }
 
 .breadcrumb {
   padding: 8px 15px;
   margin-bottom: 20px;
   list-style: none;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   border-radius: 4px;
 }
 .breadcrumb > li {
   display: inline-block;
 }
 .breadcrumb > li + li:before {
-  content: "/\00a0";
+  content: "/ ";
   padding: 0 5px;
-  color: #cccccc;
+  color: #ccc;
 }
 .breadcrumb > .active {
   color: #777777;
@@ -5019,11 +5354,11 @@ body.login #login p#backtoblog .nav-tabs.nav-justified > .active > a:focus {
   position: relative;
   float: left;
   padding: 6px 12px;
-  line-height: 1.42857;
+  line-height: 1.428571429;
   text-decoration: none;
   color: #8ab98e;
-  background-color: white;
-  border: 1px solid #dddddd;
+  background-color: #fff;
+  border: 1px solid #ddd;
   margin-left: -1px;
 }
 .pagination > li:first-child > a, body.login #login p#nav .pagination > li:first-child > a, body.login #login p#backtoblog .pagination > li:first-child > a,
@@ -5042,14 +5377,14 @@ body.login #login p#backtoblog .nav-tabs.nav-justified > .active > a:focus {
 .pagination > li > span:focus {
   color: #5c9a62;
   background-color: #eeeeee;
-  border-color: #dddddd;
+  border-color: #ddd;
 }
 .pagination > .active > a, body.login #login p#nav .pagination > .active > a, body.login #login p#backtoblog .pagination > .active > a, .pagination > .active > a:hover, body.login #login p#nav .pagination > .active > a:hover, body.login #login p#backtoblog .pagination > .active > a:hover, .pagination > .active > a:focus, body.login #login p#nav .pagination > .active > a:focus, body.login #login p#backtoblog .pagination > .active > a:focus,
 .pagination > .active > span,
 .pagination > .active > span:hover,
 .pagination > .active > span:focus {
   z-index: 2;
-  color: white;
+  color: #fff;
   background-color: #8ab98e;
   border-color: #8ab98e;
   cursor: default;
@@ -5067,8 +5402,8 @@ body.login #login p#backtoblog .pagination > .disabled > a:hover,
 body.login #login p#nav .pagination > .disabled > a:focus,
 body.login #login p#backtoblog .pagination > .disabled > a:focus {
   color: #777777;
-  background-color: white;
-  border-color: #dddddd;
+  background-color: #fff;
+  border-color: #ddd;
   cursor: not-allowed;
 }
 
@@ -5124,8 +5459,8 @@ body.login #login p#backtoblog .pagination > .disabled > a:focus {
 .pager li > span {
   display: inline-block;
   padding: 5px 14px;
-  background-color: white;
-  border: 1px solid #dddddd;
+  background-color: #fff;
+  border: 1px solid #ddd;
   border-radius: 15px;
 }
 .pager li > a:hover, .pager body.login #login p#nav li > a:hover, body.login #login p#nav .pager li > a:hover, .pager body.login #login p#backtoblog li > a:hover, body.login #login p#backtoblog .pager li > a:hover,
@@ -5158,7 +5493,7 @@ body.login #login p#nav .pager .disabled > a:focus,
 body.login #login p#backtoblog .pager .disabled > a:focus,
 .pager .disabled > span {
   color: #777777;
-  background-color: white;
+  background-color: #fff;
   cursor: not-allowed;
 }
 
@@ -5168,7 +5503,7 @@ body.login #login p#backtoblog .pager .disabled > a:focus,
   font-size: 75%;
   font-weight: bold;
   line-height: 1;
-  color: white;
+  color: #fff;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
@@ -5183,7 +5518,7 @@ body.login #login p#backtoblog .pager .disabled > a:focus,
 }
 
 a.label:hover, body.login #login p#nav a:hover, body.login #login p#backtoblog a:hover, a.validation_message:hover, a.label:focus, body.login #login p#nav a:focus, body.login #login p#backtoblog a:focus, a.validation_message:focus {
-  color: white;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
 }
@@ -5236,7 +5571,7 @@ a.label:hover, body.login #login p#nav a:hover, body.login #login p#backtoblog a
   padding: 3px 7px;
   font-size: 12px;
   font-weight: bold;
-  color: white;
+  color: #fff;
   line-height: 1;
   vertical-align: baseline;
   white-space: nowrap;
@@ -5251,26 +5586,32 @@ a.label:hover, body.login #login p#nav a:hover, body.login #login p#backtoblog a
   position: relative;
   top: -1px;
 }
-.btn-xs .badge, .btn-group-xs > .btn .badge, body.login #login form p.submit .btn-group-xs > #wp-submit .badge, .btn-group-xs > #wp-submit .badge, .btn-group-xs > .gform_button .badge {
+.btn-xs .badge, .btn-group-xs > .btn .badge, body.login #login form p.submit .btn-group-xs > #wp-submit .badge, .btn-group-xs > #wp-submit .badge, .btn-group-xs > .gform_button .badge, .btn-group-xs > .btn .badge, body.login #login form p.submit .btn-group-xs > #wp-submit .badge, .btn-group-xs > #wp-submit .badge, .btn-group-xs > .gform_button .badge {
   top: 0;
   padding: 1px 5px;
 }
-a.list-group-item.active > .badge, body.login #login p#nav a.list-group-item.active > .badge, body.login #login p#backtoblog a.list-group-item.active > .badge, .nav-pills > .active > a > .badge, body.login #login p#nav .nav-pills > .active > a > .badge, body.login #login p#backtoblog .nav-pills > .active > a > .badge {
+.list-group-item.active > .badge, .nav-pills > .active > a > .badge, body.login #login p#nav .nav-pills > .active > a > .badge, body.login #login p#backtoblog .nav-pills > .active > a > .badge {
   color: #8ab98e;
-  background-color: white;
+  background-color: #fff;
+}
+.list-group-item > .badge {
+  float: right;
+}
+.list-group-item > .badge + .badge {
+  margin-right: 5px;
 }
 .nav-pills > li > a > .badge, body.login #login p#nav .nav-pills > li > a > .badge, body.login #login p#backtoblog .nav-pills > li > a > .badge {
   margin-left: 3px;
 }
 
 a.badge:hover, body.login #login p#nav a.badge:hover, body.login #login p#backtoblog a.badge:hover, a.badge:focus, body.login #login p#nav a.badge:focus, body.login #login p#backtoblog a.badge:focus {
-  color: white;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
 }
 
 .jumbotron {
-  padding: 30px;
+  padding: 30px 15px;
   margin-bottom: 30px;
   color: inherit;
   background-color: #eeeeee;
@@ -5287,7 +5628,7 @@ a.badge:hover, body.login #login p#nav a.badge:hover, body.login #login p#backto
 .jumbotron > hr {
   border-top-color: #d5d5d5;
 }
-.container .jumbotron {
+.container .jumbotron, .container-fluid .jumbotron {
   border-radius: 6px;
 }
 .jumbotron .container {
@@ -5295,10 +5636,9 @@ a.badge:hover, body.login #login p#nav a.badge:hover, body.login #login p#backto
 }
 @media screen and (min-width: 768px) {
   .jumbotron {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding: 48px 0;
   }
-  .container .jumbotron {
+  .container .jumbotron, .container-fluid .jumbotron {
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -5312,13 +5652,13 @@ a.badge:hover, body.login #login p#nav a.badge:hover, body.login #login p#backto
   display: block;
   padding: 4px;
   margin-bottom: 20px;
-  line-height: 1.42857;
+  line-height: 1.428571429;
   background-color: #f4f4f4;
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
   border-radius: 4px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
 }
 .thumbnail > img,
 .thumbnail a > img,
@@ -5327,7 +5667,6 @@ body.login #login p#nav .thumbnail a > img,
 .thumbnail body.login #login p#backtoblog a > img,
 body.login #login p#backtoblog .thumbnail a > img {
   display: block;
-  width: 100% \9;
   max-width: 100%;
   height: auto;
   margin-left: auto;
@@ -5436,7 +5775,6 @@ body.login #login .message > ul,
   from {
     background-position: 40px 0;
   }
-
   to {
     background-position: 0 0;
   }
@@ -5445,7 +5783,6 @@ body.login #login .message > ul,
   from {
     background-position: 40px 0;
   }
-
   to {
     background-position: 0 0;
   }
@@ -5454,7 +5791,7 @@ body.login #login .message > ul,
   overflow: hidden;
   height: 20px;
   margin-bottom: 20px;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -5466,7 +5803,7 @@ body.login #login .message > ul,
   height: 100%;
   font-size: 12px;
   line-height: 20px;
-  color: white;
+  color: #fff;
   text-align: center;
   background-color: #8ab98e;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
@@ -5489,17 +5826,6 @@ body.login #login .message > ul,
   -webkit-animation: progress-bar-stripes 2s linear infinite;
   -o-animation: progress-bar-stripes 2s linear infinite;
   animation: progress-bar-stripes 2s linear infinite;
-}
-
-.progress-bar[aria-valuenow="1"], .progress-bar[aria-valuenow="2"] {
-  min-width: 30px;
-}
-.progress-bar[aria-valuenow="0"] {
-  color: #777777;
-  min-width: 30px;
-  background-color: transparent;
-  background-image: none;
-  box-shadow: none;
 }
 
 .progress-bar-success {
@@ -5538,34 +5864,55 @@ body.login #login .message > ul,
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
-.media,
-.media-body {
-  overflow: hidden;
-  zoom: 1;
-}
-
-.media,
-.media .media {
+.media {
   margin-top: 15px;
 }
-
 .media:first-child {
   margin-top: 0;
+}
+
+.media,
+.media-body {
+  zoom: 1;
+  overflow: hidden;
+}
+
+.media-body {
+  width: 10000px;
 }
 
 .media-object {
   display: block;
 }
 
-.media-heading {
-  margin: 0 0 5px;
+.media-right,
+.media > .pull-right {
+  padding-left: 10px;
 }
 
+.media-left,
 .media > .pull-left {
-  margin-right: 10px;
+  padding-right: 10px;
 }
-.media > .pull-right {
-  margin-left: 10px;
+
+.media-left,
+.media-right,
+.media-body {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.media-middle {
+  vertical-align: middle;
+}
+
+.media-bottom {
+  vertical-align: bottom;
+}
+
+.media-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 .media-list {
@@ -5583,8 +5930,8 @@ body.login #login .message > ul,
   display: block;
   padding: 10px 15px;
   margin-bottom: -1px;
-  background-color: white;
-  border: 1px solid #dddddd;
+  background-color: #fff;
+  border: 1px solid #ddd;
 }
 .list-group-item:first-child {
   border-top-right-radius: 4px;
@@ -5595,28 +5942,23 @@ body.login #login .message > ul,
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-.list-group-item > .badge {
-  float: right;
-}
-.list-group-item > .badge + .badge {
-  margin-right: 5px;
-}
 
 a.list-group-item, body.login #login p#nav a.list-group-item, body.login #login p#backtoblog a.list-group-item {
-  color: #555555;
+  color: #555;
 }
 a.list-group-item .list-group-item-heading, body.login #login p#nav a.list-group-item .list-group-item-heading, body.login #login p#backtoblog a.list-group-item .list-group-item-heading {
-  color: #333333;
+  color: #333;
 }
 a.list-group-item:hover, body.login #login p#nav a.list-group-item:hover, body.login #login p#backtoblog a.list-group-item:hover, a.list-group-item:focus, body.login #login p#nav a.list-group-item:focus, body.login #login p#backtoblog a.list-group-item:focus {
   text-decoration: none;
-  color: #555555;
-  background-color: whitesmoke;
+  color: #555;
+  background-color: #f5f5f5;
 }
 
 .list-group-item.disabled, .list-group-item.disabled:hover, .list-group-item.disabled:focus {
   background-color: #eeeeee;
   color: #777777;
+  cursor: not-allowed;
 }
 .list-group-item.disabled .list-group-item-heading, .list-group-item.disabled:hover .list-group-item-heading, .list-group-item.disabled:focus .list-group-item-heading {
   color: inherit;
@@ -5626,7 +5968,7 @@ a.list-group-item:hover, body.login #login p#nav a.list-group-item:hover, body.l
 }
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
   z-index: 2;
-  color: white;
+  color: #fff;
   background-color: #8ab98e;
   border-color: #8ab98e;
 }
@@ -5739,7 +6081,7 @@ a.list-group-item-danger.active, body.login #login p#nav a.list-group-item-dange
 
 .panel {
   margin-bottom: 20px;
-  background-color: white;
+  background-color: #fff;
   border: 1px solid transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -5773,31 +6115,43 @@ a.list-group-item-danger.active, body.login #login p#nav a.list-group-item-dange
   font-size: 16px;
   color: inherit;
 }
-.panel-title > a, body.login #login p#nav .panel-title > a, body.login #login p#backtoblog .panel-title > a {
+.panel-title > a, body.login #login p#nav .panel-title > a, body.login #login p#backtoblog .panel-title > a,
+.panel-title > small,
+.panel-title > .small,
+.panel-title > small > a,
+body.login #login p#nav .panel-title > small > a,
+body.login #login p#backtoblog .panel-title > small > a,
+.panel-title > .small > a,
+body.login #login p#nav .panel-title > .small > a,
+body.login #login p#backtoblog .panel-title > .small > a {
   color: inherit;
 }
 
 .panel-footer {
   padding: 10px 15px;
-  background-color: whitesmoke;
-  border-top: 1px solid #dddddd;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
 
-.panel > .list-group {
+.panel > .list-group,
+.panel > .panel-collapse > .list-group {
   margin-bottom: 0;
 }
-.panel > .list-group .list-group-item {
+.panel > .list-group .list-group-item,
+.panel > .panel-collapse > .list-group .list-group-item {
   border-width: 1px 0;
   border-radius: 0;
 }
-.panel > .list-group:first-child .list-group-item:first-child {
+.panel > .list-group:first-child .list-group-item:first-child,
+.panel > .panel-collapse > .list-group:first-child .list-group-item:first-child {
   border-top: 0;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
 }
-.panel > .list-group:last-child .list-group-item:last-child {
+.panel > .list-group:last-child .list-group-item:last-child,
+.panel > .panel-collapse > .list-group:last-child .list-group-item:last-child {
   border-bottom: 0;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -5816,10 +6170,23 @@ a.list-group-item-danger.active, body.login #login p#nav a.list-group-item-dange
 .panel > .panel-collapse > .table {
   margin-bottom: 0;
 }
+.panel > .table caption,
+.panel > .table-responsive > .table caption,
+.panel > .panel-collapse > .table caption {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .panel > .table:first-child,
 .panel > .table-responsive:first-child > .table:first-child {
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
+}
+.panel > .table:first-child > thead:first-child > tr:first-child,
+.panel > .table:first-child > tbody:first-child > tr:first-child,
+.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
+.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 .panel > .table:first-child > thead:first-child > tr:first-child td:first-child,
 .panel > .table:first-child > thead:first-child > tr:first-child th:first-child,
@@ -5846,6 +6213,13 @@ a.list-group-item-danger.active, body.login #login p#nav a.list-group-item-dange
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
+.panel > .table:last-child > tbody:last-child > tr:last-child,
+.panel > .table:last-child > tfoot:last-child > tr:last-child,
+.panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
+.panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
 .panel > .table:last-child > tbody:last-child > tr:last-child td:first-child,
 .panel > .table:last-child > tbody:last-child > tr:last-child th:first-child,
 .panel > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
@@ -5867,8 +6241,10 @@ a.list-group-item-danger.active, body.login #login p#nav a.list-group-item-dange
   border-bottom-right-radius: 3px;
 }
 .panel > .panel-body + .table,
-.panel > .panel-body + .table-responsive {
-  border-top: 1px solid #dddddd;
+.panel > .panel-body + .table-responsive,
+.panel > .table + .panel-body,
+.panel > .table-responsive + .panel-body {
+  border-top: 1px solid #ddd;
 }
 .panel > .table > tbody:first-child > tr:first-child th,
 .panel > .table > tbody:first-child > tr:first-child td {
@@ -5944,40 +6320,41 @@ a.list-group-item-danger.active, body.login #login p#nav a.list-group-item-dange
 .panel-group .panel-heading {
   border-bottom: 0;
 }
-.panel-group .panel-heading + .panel-collapse > .panel-body {
-  border-top: 1px solid #dddddd;
+.panel-group .panel-heading + .panel-collapse > .panel-body,
+.panel-group .panel-heading + .panel-collapse > .list-group {
+  border-top: 1px solid #ddd;
 }
 .panel-group .panel-footer {
   border-top: 0;
 }
 .panel-group .panel-footer + .panel-collapse .panel-body {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .panel-default {
-  border-color: #dddddd;
+  border-color: #ddd;
 }
 .panel-default > .panel-heading {
   color: #333333;
-  background-color: whitesmoke;
-  border-color: #dddddd;
+  background-color: #f5f5f5;
+  border-color: #ddd;
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #dddddd;
+  border-top-color: #ddd;
 }
 .panel-default > .panel-heading .badge {
-  color: whitesmoke;
+  color: #f5f5f5;
   background-color: #333333;
 }
 .panel-default > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #dddddd;
+  border-bottom-color: #ddd;
 }
 
 .panel-primary {
   border-color: #8ab98e;
 }
 .panel-primary > .panel-heading {
-  color: white;
+  color: #fff;
   background-color: #8ab98e;
   border-color: #8ab98e;
 }
@@ -5986,7 +6363,7 @@ a.list-group-item-danger.active, body.login #login p#nav a.list-group-item-dange
 }
 .panel-primary > .panel-heading .badge {
   color: #8ab98e;
-  background-color: white;
+  background-color: #fff;
 }
 .panel-primary > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #8ab98e;
@@ -6078,7 +6455,8 @@ a.list-group-item-danger.active, body.login #login p#nav a.list-group-item-dange
 .embed-responsive .embed-responsive-item,
 .embed-responsive iframe,
 .embed-responsive embed,
-.embed-responsive object {
+.embed-responsive object,
+.embed-responsive video {
   position: absolute;
   top: 0;
   left: 0;
@@ -6087,10 +6465,12 @@ a.list-group-item-danger.active, body.login #login p#nav a.list-group-item-dange
   width: 100%;
   border: 0;
 }
-.embed-responsive.embed-responsive-16by9 {
+
+.embed-responsive-16by9 {
   padding-bottom: 56.25%;
 }
-.embed-responsive.embed-responsive-4by3 {
+
+.embed-responsive-4by3 {
   padding-bottom: 75%;
 }
 
@@ -6098,7 +6478,7 @@ a.list-group-item-danger.active, body.login #login p#nav a.list-group-item-dange
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   border: 1px solid #e3e3e3;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -6124,13 +6504,13 @@ a.list-group-item-danger.active, body.login #login p#nav a.list-group-item-dange
   font-size: 21px;
   font-weight: bold;
   line-height: 1;
-  color: black;
-  text-shadow: 0 1px 0 white;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
   opacity: 0.2;
   filter: alpha(opacity=20);
 }
 .close:hover, .close:focus {
-  color: black;
+  color: #000;
   text-decoration: none;
   cursor: pointer;
   opacity: 0.5;
@@ -6162,16 +6542,20 @@ button.close {
   outline: 0;
 }
 .modal.fade .modal-dialog {
-  -webkit-transform: translate3d(0, -25%, 0);
-  transform: translate3d(0, -25%, 0);
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
   -webkit-transition: -webkit-transform 0.3s ease-out;
   -moz-transition: -moz-transform 0.3s ease-out;
   -o-transition: -o-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
 }
 .modal.in .modal-dialog {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 .modal-open .modal {
@@ -6187,8 +6571,8 @@ button.close {
 
 .modal-content {
   position: relative;
-  background-color: white;
-  border: 1px solid #999999;
+  background-color: #fff;
+  border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
@@ -6204,7 +6588,7 @@ button.close {
   bottom: 0;
   left: 0;
   z-index: 1040;
-  background-color: black;
+  background-color: #000;
 }
 .modal-backdrop.fade {
   opacity: 0;
@@ -6218,7 +6602,7 @@ button.close {
 .modal-header {
   padding: 15px;
   border-bottom: 1px solid #e5e5e5;
-  min-height: 16.42857px;
+  min-height: 16.428571429px;
 }
 
 .modal-header .close {
@@ -6227,7 +6611,7 @@ button.close {
 
 .modal-title {
   margin: 0;
-  line-height: 1.42857;
+  line-height: 1.428571429;
 }
 
 .modal-body {
@@ -6290,8 +6674,9 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  visibility: visible;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 12px;
+  font-weight: normal;
   line-height: 1.4;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -6320,10 +6705,10 @@ button.close {
 .tooltip-inner {
   max-width: 200px;
   padding: 3px 8px;
-  color: white;
+  color: #fff;
   text-align: center;
   text-decoration: none;
-  background-color: black;
+  background-color: #000;
   border-radius: 4px;
 }
 
@@ -6340,52 +6725,56 @@ button.close {
   left: 50%;
   margin-left: -5px;
   border-width: 5px 5px 0;
-  border-top-color: black;
+  border-top-color: #000;
 }
 .tooltip.top-left .tooltip-arrow {
   bottom: 0;
-  left: 5px;
+  right: 5px;
+  margin-bottom: -5px;
   border-width: 5px 5px 0;
-  border-top-color: black;
+  border-top-color: #000;
 }
 .tooltip.top-right .tooltip-arrow {
   bottom: 0;
-  right: 5px;
+  left: 5px;
+  margin-bottom: -5px;
   border-width: 5px 5px 0;
-  border-top-color: black;
+  border-top-color: #000;
 }
 .tooltip.right .tooltip-arrow {
   top: 50%;
   left: 0;
   margin-top: -5px;
   border-width: 5px 5px 5px 0;
-  border-right-color: black;
+  border-right-color: #000;
 }
 .tooltip.left .tooltip-arrow {
   top: 50%;
   right: 0;
   margin-top: -5px;
   border-width: 5px 0 5px 5px;
-  border-left-color: black;
+  border-left-color: #000;
 }
 .tooltip.bottom .tooltip-arrow {
   top: 0;
   left: 50%;
   margin-left: -5px;
   border-width: 0 5px 5px;
-  border-bottom-color: black;
+  border-bottom-color: #000;
 }
 .tooltip.bottom-left .tooltip-arrow {
   top: 0;
-  left: 5px;
+  right: 5px;
+  margin-top: -5px;
   border-width: 0 5px 5px;
-  border-bottom-color: black;
+  border-bottom-color: #000;
 }
 .tooltip.bottom-right .tooltip-arrow {
   top: 0;
-  right: 5px;
+  left: 5px;
+  margin-top: -5px;
   border-width: 0 5px 5px;
-  border-bottom-color: black;
+  border-bottom-color: #000;
 }
 
 .popover {
@@ -6396,10 +6785,14 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
   text-align: left;
-  background-color: white;
+  background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -6423,8 +6816,6 @@ button.close {
   margin: 0;
   padding: 8px 14px;
   font-size: 14px;
-  font-weight: normal;
-  line-height: 18px;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
   border-radius: 5px 5px 0 0;
@@ -6465,7 +6856,7 @@ button.close {
   bottom: 1px;
   margin-left: -10px;
   border-bottom-width: 0;
-  border-top-color: white;
+  border-top-color: #fff;
 }
 .popover.right > .arrow {
   top: 50%;
@@ -6480,7 +6871,7 @@ button.close {
   left: 1px;
   bottom: -10px;
   border-left-width: 0;
-  border-right-color: white;
+  border-right-color: #fff;
 }
 .popover.bottom > .arrow {
   left: 50%;
@@ -6495,7 +6886,7 @@ button.close {
   top: 1px;
   margin-left: -10px;
   border-top-width: 0;
-  border-bottom-color: white;
+  border-bottom-color: #fff;
 }
 .popover.left > .arrow {
   top: 50%;
@@ -6509,7 +6900,7 @@ button.close {
   content: " ";
   right: 1px;
   border-right-width: 0;
-  border-left-color: white;
+  border-left-color: #fff;
   bottom: -10px;
 }
 
@@ -6534,10 +6925,38 @@ button.close {
 body.login #login p#nav .carousel-inner > .item > a > img,
 body.login #login p#backtoblog .carousel-inner > .item > a > img {
   display: block;
-  width: 100% \9;
   max-width: 100%;
   height: auto;
   line-height: 1;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel-inner > .item {
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    -moz-transition: -moz-transform 0.6s ease-in-out;
+    -o-transition: -o-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    perspective: 1000;
+  }
+  .carousel-inner > .item.next, .carousel-inner > .item.active.right {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    left: 0;
+  }
+  .carousel-inner > .item.prev, .carousel-inner > .item.active.left {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    left: 0;
+  }
+  .carousel-inner > .item.next.left, .carousel-inner > .item.prev.right, .carousel-inner > .item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    left: 0;
+  }
 }
 .carousel-inner > .active,
 .carousel-inner > .next,
@@ -6579,7 +6998,7 @@ body.login #login p#backtoblog .carousel-inner > .item > a > img {
   opacity: 0.5;
   filter: alpha(opacity=50);
   font-size: 20px;
-  color: white;
+  color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
@@ -6601,7 +7020,7 @@ body.login #login p#backtoblog .carousel-inner > .item > a > img {
 }
 .carousel-control:hover, .carousel-control:focus {
   outline: 0;
-  color: white;
+  color: #fff;
   text-decoration: none;
   opacity: 0.9;
   filter: alpha(opacity=90);
@@ -6630,6 +7049,7 @@ body.login #login p#backtoblog .carousel-inner > .item > a > img {
   width: 20px;
   height: 20px;
   margin-top: -10px;
+  line-height: 1;
   font-family: serif;
 }
 .carousel-control .icon-prev:before {
@@ -6656,7 +7076,7 @@ body.login #login p#backtoblog .carousel-inner > .item > a > img {
   height: 10px;
   margin: 1px;
   text-indent: -999px;
-  border: 1px solid white;
+  border: 1px solid #fff;
   border-radius: 10px;
   cursor: pointer;
   background-color: #000 \9;
@@ -6666,7 +7086,7 @@ body.login #login p#backtoblog .carousel-inner > .item > a > img {
   margin: 0;
   width: 12px;
   height: 12px;
-  background-color: white;
+  background-color: #fff;
 }
 
 .carousel-caption {
@@ -6677,7 +7097,7 @@ body.login #login p#backtoblog .carousel-inner > .item > a > img {
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: white;
+  color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
@@ -6758,19 +7178,28 @@ body.login #login p#backtoblog .carousel-inner > .item > a > img {
 
 .hidden {
   display: none !important;
-  visibility: hidden !important;
 }
 
 .affix {
   position: fixed;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
 }
 
 @-ms-viewport {
   width: device-width;
 }
-.visible-xs, .visible-sm, .visible-md, .visible-lg {
+.visible-xs {
+  display: none !important;
+}
+
+.visible-sm {
+  display: none !important;
+}
+
+.visible-md {
+  display: none !important;
+}
+
+.visible-lg {
   display: none !important;
 }
 
@@ -7032,7 +7461,7 @@ body.login #login p#backtoblog .carousel-inner > .item > a > img {
 
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
-  font-size: 1.33333em;
+  font-size: 1.3333333333em;
   line-height: 0.75em;
   vertical-align: -15%;
 }
@@ -7054,13 +7483,13 @@ body.login #login p#backtoblog .carousel-inner > .item > a > img {
 }
 
 .fa-fw {
-  width: 1.28571em;
+  width: 1.2857142857em;
   text-align: center;
 }
 
 .fa-ul {
   padding-left: 0;
-  margin-left: 2.14286em;
+  margin-left: 2.1428571429em;
   list-style-type: none;
 }
 .fa-ul > li {
@@ -7069,18 +7498,18 @@ body.login #login p#backtoblog .carousel-inner > .item > a > img {
 
 .fa-li {
   position: absolute;
-  left: -2.14286em;
-  width: 2.14286em;
-  top: 0.14286em;
+  left: -2.1428571429em;
+  width: 2.1428571429em;
+  top: 0.1428571429em;
   text-align: center;
 }
 .fa-li.fa-lg {
-  left: -1.85714em;
+  left: -1.8571428571em;
 }
 
 .fa-border {
   padding: .2em .25em .15em;
-  border: solid 0.08em #eeeeee;
+  border: solid 0.08em #eee;
   border-radius: .1em;
 }
 
@@ -7110,7 +7539,6 @@ body.login #login p#backtoblog .carousel-inner > .item > a > img {
   0% {
     -moz-transform: rotate(0deg);
   }
-
   100% {
     -moz-transform: rotate(359deg);
   }
@@ -7119,7 +7547,6 @@ body.login #login p#backtoblog .carousel-inner > .item > a > img {
   0% {
     -webkit-transform: rotate(0deg);
   }
-
   100% {
     -webkit-transform: rotate(359deg);
   }
@@ -7128,7 +7555,6 @@ body.login #login p#backtoblog .carousel-inner > .item > a > img {
   0% {
     -o-transform: rotate(0deg);
   }
-
   100% {
     -o-transform: rotate(359deg);
   }
@@ -7138,7 +7564,6 @@ body.login #login p#backtoblog .carousel-inner > .item > a > img {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
@@ -7214,15 +7639,11 @@ body.login #login p#backtoblog .carousel-inner > .item > a > img {
 }
 
 .fa-inverse {
-  color: white;
+  color: #fff;
 }
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
-.fa-glass:before {
-  content: "\f000";
-}
-
 .fa-music:before {
   content: "\f001";
 }
@@ -9039,6 +9460,9 @@ body.login #login p#backtoblog .carousel-inner > .item > a > img {
   content: "\f1e2";
 }
 
+/********************************************************/
+/*                    Site-specific Styles              */
+/********************************************************/
 html {
   min-height: 100%;
   position: relative;
@@ -9284,9 +9708,9 @@ body.login #login {
 }
 body.login #login h1 a, body.login #login h1 p#nav a, body.login #login p#nav h1 a, body.login #login h1 p#backtoblog a, body.login #login p#backtoblog h1 a {
   background-image: url("../img/Planview-Logo-Black.png");
-  background-size: 235px 59.78349px;
+  background-size: 235px 59.7834912043px;
   width: 235px;
-  height: 59.78349px;
+  height: 59.7834912043px;
 }
 body.login #login form {
   border-radius: 4px;
@@ -9364,7 +9788,7 @@ body.login #login p#nav, body.login #login p#backtoblog {
 .ginput_complex:after {
   clear: both;
 }
-.ginput_complex .ginput_left, .ginput_complex .ginput_right {
+.ginput_complex .ginput_left, .ginput_complex .ginput_right, .ginput_complex .name_first, .ginput_complex .name_last {
   position: relative;
   float: left;
   width: 100%;
@@ -9377,7 +9801,7 @@ body.login #login p#nav, body.login #login p#backtoblog {
   padding-right: 15px;
 }
 @media (min-width: 992px) {
-  .ginput_complex .ginput_left, .ginput_complex .ginput_right {
+  .ginput_complex .ginput_left, .ginput_complex .ginput_right, .ginput_complex .name_first, .ginput_complex .name_last {
     float: left;
     width: 50%;
   }
@@ -9482,3 +9906,5 @@ body.login #login p#nav, body.login #login p#backtoblog {
     width: 100%;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
