@@ -1,0 +1,19 @@
+{
+  "name": "pvppannouce",
+  "version": "0.0.0",
+  "description": "Planview and Projectplace Announcement Site",
+  "homepage": "https://announcement.planview.com/",
+  "main": "functions.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Steve Crockett",
+  "license": "GPL-2",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^1.0.0",
+    "time-grunt": "^1.0.0"
+  }
+}
