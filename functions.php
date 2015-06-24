@@ -133,15 +133,34 @@ add_action( 'admin_init', 'launch_hide_dashboard' );
 
 add_filter( 'gform_encrypt_password', '__return_true' );
 
+/**
+ * Add Google Analytics code to the footer
+ */
+function planview_announce_google_analytics () {
+    $trackingCode = "\n";
+	$trackingCode .= "<script> \n";
+	$trackingCode .= "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ \n";
+	$trackingCode .= "(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), \n";
+	$trackingCode .= "m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) \n";
+	$trackingCode .= "})(window,document,'script','//www.google-analytics.com/analytics.js','ga'); \n";
+	$trackingCode .= "ga('create', 'UA-16646450-11', 'auto'); \n";
+	$trackingCode .= "ga('send', 'pageview'); \n";
+	$trackingCode .= "</script> \n";
+
+    return print $trackingCode;
+}
+add_action( 'wp_footer', 'planview_announce_google_analytics' );
 
 function pvppannouce_munchkin_logged_in() {
 	if (is_user_logged_in() && is_page()) : ?>
 	<script>
+	jQuery(document).ready(function ($) {
 		if (typeof Munchkin !== 'undefined') {
 			Munchkin.munchkinFunction('visitWebPage', {
 			     url: '<?php the_permalink(); ?>', params: 'loggedin=true'
 			});
 		}
+	});
 	</script>
 	<?php endif;
 }
