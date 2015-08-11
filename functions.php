@@ -144,7 +144,11 @@ function planview_announce_google_analytics () {
 	$trackingCode .= "m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) \n";
 	$trackingCode .= "})(window,document,'script','//www.google-analytics.com/analytics.js','ga'); \n";
 	$trackingCode .= "ga('create', 'UA-16646450-11', 'auto'); \n";
-	$trackingCode .= "ga('send', 'pageview'); \n";
+	$trackingCode .= "ga('send', 'pageview'); \n";	
+	$trackingCode .= "ga('create', 'UA-16646450-1', 'auto', {'name': 'newTracker', 'allowLinker': true}); \n";
+	$trackingCode .= "ga('newTracker.require', 'linker'); \n";
+	$trackingCode .= "ga('newTracker.linker:autoLink', ['www.planview.com', 'www.planview.de', 'www.planview.fr'] ); \n";
+	$trackingCode .= "ga('newTracker.send', 'pageview'); \n";
 	$trackingCode .= "</script> \n";
 
     return print $trackingCode;
